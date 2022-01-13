@@ -30,27 +30,22 @@
 						</div>
 					</div>
 					<nav class="hidden space-x-8 md:flex md:ml-10">
-						<a class="text-base font-medium text-white hover:text-gray-300" href="/">Главная</a>
-						<a class="text-base font-medium text-white hover:text-gray-300" href="/about">Компания</a>
-<!--						<a href="/settings">Settings</a>-->
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/services">Услуги</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/about">Компания</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/gallery">Галерея</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/testimonials">Отзывы</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/specialists">Специалисты</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/blog">Блог</a>
+						<a class="text-sm font-medium text-white hover:text-gray-300" href="/contacts">Контакты</a>
 					</nav>
 
-					<!--					<ul class="hidden space-x-8 md:flex md:ml-10">-->
-<!--						<li to="services" class="text-base font-medium text-white hover:text-gray-300">Услуги</li>-->
-<!--						<li to="about" class="text-center font-medium text-white hover:text-gray-300">Компания</li>-->
-<!--						<li to="gallery" class="text-base font-medium text-white hover:text-gray-300">Галерея</li>-->
-<!--						<li to="testimonials" class="text-base font-medium text-white hover:text-gray-300">Отзывы</li>-->
-<!--						<li to="specialists" class="text-base font-medium text-white hover:text-gray-300">Специалисты</li>-->
-<!--						&lt;!&ndash;                <RouterLink to="blog" class="text-base font-medium text-white hover:text-gray-300">Блог</RouterLink>&ndash;&gt;-->
-<!--						<li to="contacts" class="text-base font-medium text-white hover:text-gray-300">Контакты</li>-->
-<!--					</ul>-->
 				</div>
 				<div class="hidden md:flex md:items-center md:space-x-6">
 					<p class="text-xl font-medium text-white hover:text-gray-300">
 						+7 (831) 423-23-89
 					</p>
 					<button  type="button"
-							class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-600 to-cyan-700">
+							class="inline-flex items-center px-4 py-1 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-600 to-cyan-700">
 						Получить консультацию
 					</button>
 				</div>

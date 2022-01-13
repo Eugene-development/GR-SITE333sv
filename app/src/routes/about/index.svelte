@@ -14,14 +14,74 @@
     export const prerender = true;
 
     const about = 'О компании';
-    const title = 'О компаии "Гост Ремонт"'
+    const title = 'О компании "Гост Ремонт"'
+
+    const dataCompany = "                                    <div class=\"sm:col-span-1\">\n" +
+        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
+        "                                            ИНН/КПП\n" +
+        "                                        </dt>\n" +
+        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
+        "                                            5262354912/526201001\n" +
+        "                                        </dd>\n" +
+        "                                    </div>\n" +
+        "                                    <div class=\"sm:col-span-1\">\n" +
+        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
+        "                                            ОГРН\n" +
+        "                                        </dt>\n" +
+        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
+        "                                            1185275008665\n" +
+        "                                        </dd>\n" +
+        "                                    </div>\n" +
+        "                                    <div class=\"sm:col-span-1\">\n" +
+        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
+        "                                            Юридический адрес\n" +
+        "                                        </dt>\n" +
+        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
+        "                                            Нижний Новгород, Пушкина 18, оф. 631\n" +
+        "                                        </dd>\n" +
+        "                                    </div>\n" +
+        "                                    <div class=\"sm:col-span-1\">\n" +
+        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
+        "                                            Директор\n" +
+        "                                        </dt>\n" +
+        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
+        "                                            Колобов Д.В.\n" +
+        "                                        </dd>\n" +
+        "                                    </div>\n"
+
+
+
+
+
+</script>
+
+<script>
+    let name = 'Name-A'
+    function changeName () {
+        name = 'Name-B';
+    }
+
+
+    let count = 0;
+
+    function incrementCount() {
+        count += 1;
+    }
+
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
 
+
+{name}
+<button on:click={changeName}>Измени имя</button>
+<button on:click={incrementCount}>
+    {count === 0 ? 'Кликни по мне' : `Кликов: ${count}`}
+</button>
 <div class="content">
+
     <div class="min-h-full">
         <div class="pb-24 bg-gradient-to-r from-sky-800 to-cyan-600">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -153,38 +213,7 @@
                             </div>
                             <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-                                    <div class="sm:col-span-1">
-                                        <dt class="text-sm font-medium text-gray-500">
-                                            ИНН/КПП
-                                        </dt>
-                                        <dd class="mt-1 text-sm text-gray-900">
-                                            5262354912/526201001
-                                        </dd>
-                                    </div>
-                                    <div class="sm:col-span-1">
-                                        <dt class="text-sm font-medium text-gray-500">
-                                            ОГРН
-                                        </dt>
-                                        <dd class="mt-1 text-sm text-gray-900">
-                                            1185275008665
-                                        </dd>
-                                    </div>
-                                    <div class="sm:col-span-1">
-                                        <dt class="text-sm font-medium text-gray-500">
-                                            Юридический адрес
-                                        </dt>
-                                        <dd class="mt-1 text-sm text-gray-900">
-                                            Нижний Новгород, Пушкина 18, оф. 631
-                                        </dd>
-                                    </div>
-                                    <div class="sm:col-span-1">
-                                        <dt class="text-sm font-medium text-gray-500">
-                                            Директор
-                                        </dt>
-                                        <dd class="mt-1 text-sm text-gray-900">
-                                            Колобов Д.В.
-                                        </dd>
-                                    </div>
+                                    {@html dataCompany}
                                     <div class="sm:col-span-2">
                                         <dt class="text-sm font-medium text-gray-500">
                                             Деятельность
