@@ -1,21 +1,33 @@
 <script context="module">
+
+    import axios from "axios";
+
+    // const axios = require('axios')
+
     /** @type {import('@sveltejs/kit').Load} */
     export async function load({ params, fetch, session, stuff }) {
-        const url = `https://jsonplaceholder.typicode.com/users`;
-        const res = await fetch(url);
+        // const url = `https://jsonplaceholder.typicode.com/users`;
+        const url = `get-all-category/`;
 
-        if (res.ok) {
-            return {
-                props: {
-                    users: await res.json()
-                }
-            };
+        const confReq =  {
+            baseURL: import.meta.env.VITE_API_CRUD,
+            headers: {
+                Authorization: `Bearer ${import.meta.env.VITE_TOKEN}`
+            }
         }
 
-        return {
-            status: res.status,
-            error: new Error(`Не могу загрузить ${url}`)
-        };
+        try {
+        const res = await axios.get(url, confReq);
+
+            return {
+                props: {
+                    users: await res.data.data
+                }
+            };
+
+        } catch (error) {
+            console.error(error);
+        }
     }
 </script>
 
