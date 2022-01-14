@@ -22,10 +22,10 @@
                         <div class="absolute top-0 p-5 inline-block bg-cyan-700 rounded-xl shadow-lg transform -translate-y-1/2">
                             <!-- Heroicon name: outline/phone -->
                             <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-medium text-gray-900">Отделка</h3>
+                        <h3 class="text-xl font-medium text-gray-900">Косметический ремонт</h3>
                         <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
@@ -41,11 +41,11 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-medium text-gray-900">Двери</h3>
+                        <h3 class="text-xl font-medium text-gray-900">Стандартный ремонт</h3>
                         <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true"> &rarr;</span></a>
+                        <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true">  &rarr;</span></a>
                     </div>
                 </div>
 
@@ -54,10 +54,10 @@
                         <div class="absolute top-0 p-5 inline-block bg-cyan-700 rounded-xl shadow-lg transform -translate-y-1/2">
                             <!-- Heroicon name: outline/newspaper -->
                             <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-medium text-gray-900">Потолки</h3>
+                        <h3 class="text-xl font-medium text-gray-900">Капитальный ремонт</h3>
                         <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
@@ -67,6 +67,54 @@
             </div>
         </section>
     </div>
+
+
+    <div class="bg-white">
+        <div class="max-w-2xl mx-auto py-8 px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Подробнее</h2>
+                <p class="mt-4 text-gray-500">Выберите наиболее приемлимый для вас вариант сотрудничества с нашей компанией.</p>
+            </div>
+
+            <div class="mt-16 space-y-16">
+                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
+                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
+                        <h3 class="text-2xl font-medium text-gray-900">Косметический ремонт</h3>
+                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
+                    </div>
+                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
+                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
+                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
+                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
+                        <h3 class="text-2xl font-medium text-gray-900">Стандартный ремонт</h3>
+                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
+                    </div>
+                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
+                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
+                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
+                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
+                        <h3 class="text-2xl font-medium text-gray-900">Капитальный ремонт</h3>
+                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
+                    </div>
+                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
+                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
+                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-gray-50">
