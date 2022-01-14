@@ -1,16 +1,39 @@
 <script>
-    import {page} from '$app/stores';
-    import logo from './svelte-logo.svg';
+    import { count } from '../../stores.js';
 
-    let visibleFormMeasurement = false
     function changeVisibleFormMeasurement() {
-        visibleFormMeasurement = !visibleFormMeasurement;
+        count.update(n => !n);
     }
+
+
+
+
+    let visibleFormMeasurement;
+
+    count.subscribe(value => {
+        visibleFormMeasurement = value;
+    });
+
+
+
+    // let visibleFormMeasurement = false
+    // function changeVisibleFormMeasurement() {
+    //     visibleFormMeasurement = !visibleFormMeasurement;
+    // }
 
     import { fade } from 'svelte/transition';
 
 
 </script>
+
+<!--<button on:click={increment}>-->
+<!--    +-->
+<!--</button>-->
+<!--<br>-->
+
+
+<!--<h1>Счётчик равен {bool_value}</h1>-->
+
 
 <header>
 
