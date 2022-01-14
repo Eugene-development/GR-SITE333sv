@@ -1,3 +1,5 @@
 import { writable } from 'svelte/store';
 
-export const count = writable(false);
+
+const bolStart = false;
+export const bool = writable(bolStart);

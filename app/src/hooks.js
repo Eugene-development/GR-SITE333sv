@@ -18,3 +18,6 @@ export const handle = async ({ request, resolve }) => {
 
 	return response;
 };
+
+
+export const bolFun = (param) => !param

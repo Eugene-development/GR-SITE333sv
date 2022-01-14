@@ -1,18 +1,13 @@
 <script>
-    import { count } from '../../stores.js';
+    import { bool } from '../../stores.js';
+    import {bolFun} from "../../hooks";
 
     function changeVisibleFormMeasurement() {
-        count.update(n => !n);
+        bool.update(bolFun);
     }
 
-
-
-
     let visibleFormMeasurement;
-
-    count.subscribe(value => {
-        visibleFormMeasurement = value;
-    });
+    bool.subscribe(value => visibleFormMeasurement = value);
 
 
 
