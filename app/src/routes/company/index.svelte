@@ -56,18 +56,6 @@
 </script>
 
 <script>
-    let name = 'Name-A'
-    function changeName () {
-        name = 'Name-B';
-    }
-
-
-    let count = 0;
-
-    function incrementCount() {
-        count += 1;
-    }
-
 </script>
 
 <svelte:head>
@@ -76,10 +64,6 @@
 
 
 {name}
-<button on:click={changeName}>Измени имя</button>
-<button on:click={incrementCount}>
-    {count === 0 ? 'Кликни по мне' : `Кликов: ${count}`}
-</button>
 <div class="content">
 
     <div class="min-h-full">
