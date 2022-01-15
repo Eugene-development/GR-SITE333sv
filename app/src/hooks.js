@@ -21,4 +21,10 @@ export const handle = async ({ request, resolve }) => {
 
 
 export const useAction = param => !param
-// export const useGetter = param => !param
+
+
+const console = (param) => param + 1;
+
+export const useTest = {
+	console
+}

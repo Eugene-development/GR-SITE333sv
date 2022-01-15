@@ -1,13 +1,23 @@
 <script>
     import { fade } from 'svelte/transition';
     import { bool } from '../../stores.js';
-    import { useAction } from "../../hooks";
+    import { useAction, useTest } from "../../hooks";
 
     const changeVisibleFormMeasurement = () => bool.update(useAction)
-
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
     //TODO Реализуй геттер в хуке
+
+
+
+    const {console} = useTest;
+    const result = console(877)
+
+
+
+
+
+
 
 
     // let visibleFormMeasurement = false
@@ -27,6 +37,13 @@
 
 <!--<h1>Счётчик равен {bool_value}</h1>-->
 
+
+
+
+<button on:click={console}>
+    CONSOLE
+</button>
+{result}
 
 <header>
 
