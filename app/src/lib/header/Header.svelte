@@ -1,9 +1,9 @@
 <script>
     import { fade } from 'svelte/transition';
     import { bool } from '../../stores.js';
-    import { useAction, useTest } from "../../hooks";
+    import { visible, useTest } from "../../hooks";
 
-    const changeVisibleFormMeasurement = () => bool.update(useAction)
+    const changeVisibleFormMeasurement = () => bool.update(visible)
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
     //TODO Реализуй геттер в хуке

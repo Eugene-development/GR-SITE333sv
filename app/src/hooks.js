@@ -20,10 +20,15 @@ export const handle = async ({ request, resolve }) => {
 };
 
 
-export const useAction = param => !param
+export const visible = param => !param
+
+
 
 
 const console = (param) => param + 1;
+
+let visibleFormMeasurement;
+const visibleFormMeasurement2 = value => visibleFormMeasurement = value
 
 export const useTest = {
 	console
