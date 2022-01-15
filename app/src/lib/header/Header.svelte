@@ -1,9 +1,10 @@
 <script>
     import { fade } from 'svelte/transition';
     import { bool } from '../../stores.js';
+    import { useHeader } from "../../use/content/header";
     // import { useTest } from "../../hooks";
 
-   import {useVisible} from "../../use/visible";
+   import { useVisible } from "../../use/visible";
    const { visible } = useVisible
 
 
@@ -11,6 +12,8 @@
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
 
+
+    const { menu } = useHeader;
 
     // const {console, m} = useTest;
     // const result = console(877)
@@ -74,14 +77,9 @@
                         </div>
                     </div>
                     <nav class="hidden space-x-8 md:flex md:ml-10 ">
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/services">Услуги</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/company">Компания</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/gallery">Галерея</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/testimonials">Отзывы</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300"
-                           href="/specialists">Специалисты</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/blog">Блог</a>
-                        <a class="text-sm font-medium text-white hover:text-gray-300" href="/contacts">Контакты</a>
+                        {#each menu as { value, link }, i}
+                            <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
+                        {/each}
                     </nav>
 
                 </div>
