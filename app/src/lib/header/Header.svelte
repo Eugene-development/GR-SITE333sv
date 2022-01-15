@@ -10,8 +10,10 @@
 
 
 
-    const {console} = useTest;
+    const {console, m} = useTest;
     const result = console(877)
+    const {ggg} = m
+
 
 
 
@@ -43,8 +45,9 @@
 <button on:click={console}>
     CONSOLE
 </button>
-{result}
+{result}-
 
+<pre> {ggg}</pre>
 <header>
 
     <div class="relative">
