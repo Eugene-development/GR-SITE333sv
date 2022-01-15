@@ -21,7 +21,6 @@ export const handle = async ({request, resolve}) => {
 };
 
 
-export const visible = param => !param
 
 
 const console = (param) => param + 1;

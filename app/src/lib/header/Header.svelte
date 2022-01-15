@@ -1,30 +1,29 @@
 <script>
     import { fade } from 'svelte/transition';
     import { bool } from '../../stores.js';
-    import { visible, useTest } from "../../hooks";
+    // import { useTest } from "../../hooks";
+
+   import {useVisible} from "../../use/visible";
+   const { visible } = useVisible
+
 
     const changeVisibleFormMeasurement = () => bool.update(visible)
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
-    //TODO Реализуй геттер в хуке
 
 
-
-    const {console, m} = useTest;
-    const result = console(877)
-    const {ggg} = m
-
-
-
-
-
-
-
-
+    // const {console, m} = useTest;
+    // const result = console(877)
+    // const {ggg} = m
 
     // let visibleFormMeasurement = false
     // function changeVisibleFormMeasurement() {
     //     visibleFormMeasurement = !visibleFormMeasurement;
+    // }
+
+    // <!--let result2 = 3;-->
+    // <!--function consoleTest (){-->
+    // <!--    result2 = console(999)-->
     // }
 
 
@@ -42,12 +41,12 @@
 
 
 
-<button on:click={console}>
-    CONSOLE
-</button>
-{result}-
+<!--<button on:click={consoleTest}>-->
+<!--    CONSOLE-->
+<!--</button>-->
+<!--{result}-{result2}-->
 
-<pre> {ggg}</pre>
+<!--<pre> {ggg}</pre>-->
 <header>
 
     <div class="relative">
