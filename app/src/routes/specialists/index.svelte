@@ -1,3 +1,10 @@
+<script>
+    import { useSpecialists } from "../../use/content/specialists";
+    const {specialists} = useSpecialists;
+
+
+</script>
+
 <div class="bg-white ">
     <div class="pb-24 bg-gradient-to-r from-sky-700 to-cyan-500">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -60,78 +67,30 @@
         </div>
     </div>
 
-    <div class="-mt-24 pb-8">
-        <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                <div>
-                    <h2 class="text-3xl font-extrabold text-gray-900">
-                        Мастер отделочных работ
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-500">Выполняет работы по Can’t find the answer you’re looking for? Reach out to our  team.</p>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:col-span-2">
-                    <dl class="space-y-12">
-                        <div>
-                            <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Зайцев Алексей Петрович, 24 года
-                            </dt>
-                            <dd class="mt-2 text-base text-gray-500">
-                                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-
-                        <!-- More questions... -->
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                <div>
-                    <h2 class="text-3xl font-extrabold text-gray-900">
-                        Мастер отделочных работ
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-500">Выполняет работы по Can’t find the answer you’re looking for? Reach out to our  team.</p>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:col-span-2">
-                    <dl class="space-y-12">
-                        <div>
-                            <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Зайцев Алексей Петрович, 24 года
-                            </dt>
-                            <dd class="mt-2 text-base text-gray-500">
-                                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-
-                        <!-- More questions... -->
-                    </dl>
+    {#each specialists as { speciality, description, name, old, text }, i}
+        <div class="-mt-24 pb-8">
+            <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <div>
+                        <h2 class="text-3xl font-extrabold text-gray-900">
+                            {speciality}
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-500">{description}</p>
+                    </div>
+                    <div class="mt-12 lg:mt-0 lg:col-span-2">
+                        <dl class="space-y-12">
+                            <div>
+                                <dt class="text-lg leading-6 font-medium text-gray-900">
+                                    {name}, {old}
+                                </dt>
+                                <dd class="mt-2 text-base text-gray-500">
+                                    {text}
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-                <div>
-                    <h2 class="text-3xl font-extrabold text-gray-900">
-                        Мастер отделочных работ
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-500">Выполняет работы по Can’t find the answer you’re looking for? Reach out to our  team.</p>
-                </div>
-                <div class="mt-12 lg:mt-0 lg:col-span-2">
-                    <dl class="space-y-12">
-                        <div>
-                            <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Зайцев Алексей Петрович, 24 года
-                            </dt>
-                            <dd class="mt-2 text-base text-gray-500">
-                                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-
-                        <!-- More questions... -->
-                    </dl>
-                </div>
-            </div>
-        </div>
-    </div>
+    {/each}
 </div>

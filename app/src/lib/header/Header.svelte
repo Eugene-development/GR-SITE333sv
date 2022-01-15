@@ -1,11 +1,11 @@
 <script>
-    import { fade } from 'svelte/transition';
+    import { fade, fly } from 'svelte/transition';
     import { bool } from '../../stores.js';
     import { useHeader } from "../../use/content/header";
     // import { useTest } from "../../hooks";
 
    import { useVisible } from "../../use/visible";
-   const { visible } = useVisible
+   const { visible } = useVisible;
 
 
     const changeVisibleFormMeasurement = () => bool.update(visible)
@@ -13,7 +13,7 @@
     bool.subscribe(value => visibleFormMeasurement = value);
 
 
-    const { menu } = useHeader;
+    const { menu, phone } = useHeader;
 
     // const {console, m} = useTest;
     // const result = console(877)
@@ -78,6 +78,7 @@
                     </div>
                     <nav class="hidden space-x-8 md:flex md:ml-10 ">
                         {#each menu as { value, link }, i}
+
                             <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
                         {/each}
                     </nav>
@@ -85,7 +86,7 @@
                 </div>
                 <div class="hidden md:flex md:items-center md:space-x-6">
                     <p class="text-xl font-medium text-white hover:text-gray-300">
-                        +7 (831) 423-23-89
+                        {phone}
                     </p>
                     <button on:click={changeVisibleFormMeasurement} type="button"
                             class="inline-flex items-center px-4 py-1 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-600 to-cyan-700">
@@ -403,35 +404,5 @@
         </div>
     {/if}
 
-
-    <!--	<div class="corner">-->
-    <!--		<a href="https://kit.svelte.dev">-->
-    <!--			<img src={logo} alt="SvelteKit" />-->
-    <!--		</a>-->
-    <!--	</div>-->
-
-    <!--	<nav>-->
-    <!--		<svg viewBox="0 0 2 3" aria-hidden="true">-->
-    <!--			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />-->
-    <!--		</svg>-->
-    <!--		<ul>-->
-    <!--			<li class:active={$page.url.pathname === '/'}>-->
-    <!--				<a sveltekit:prefetch href="/">Home</a>-->
-    <!--			</li>-->
-    <!--			<li class:active={$page.url.pathname === '/about'}>-->
-    <!--				<a sveltekit:prefetch href="/about">About</a>-->
-    <!--			</li>-->
-    <!--			<li class:active={$page.url.pathname === '/todos'}>-->
-    <!--				<a sveltekit:prefetch href="/todos">Todos</a>-->
-    <!--			</li>-->
-    <!--		</ul>-->
-    <!--		<svg viewBox="0 0 2 3" aria-hidden="true">-->
-    <!--			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />-->
-    <!--		</svg>-->
-    <!--	</nav>-->
-
-    <!--	<div class="corner">-->
-    <!--		&lt;!&ndash; TODO put something else here? github link? &ndash;&gt;-->
-    <!--	</div>-->
 </header>
 

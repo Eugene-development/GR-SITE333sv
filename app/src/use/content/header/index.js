@@ -29,6 +29,9 @@ const menu = [
     },
 ]
 
+const phone = '+7 (831) 423-23-89'
+
 export const useHeader = {
-    menu
+    menu,
+    phone
 }

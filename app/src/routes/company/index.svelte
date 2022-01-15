@@ -16,54 +16,12 @@
     const about = 'О компании';
     const title = 'О компании "Гост Ремонт"'
 
-    const dataCompany = "                                    <div class=\"sm:col-span-1\">\n" +
-        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
-        "                                            ИНН/КПП\n" +
-        "                                        </dt>\n" +
-        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
-        "                                            5262354912/526201001\n" +
-        "                                        </dd>\n" +
-        "                                    </div>\n" +
-        "                                    <div class=\"sm:col-span-1\">\n" +
-        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
-        "                                            ОГРН\n" +
-        "                                        </dt>\n" +
-        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
-        "                                            1185275008665\n" +
-        "                                        </dd>\n" +
-        "                                    </div>\n" +
-        "                                    <div class=\"sm:col-span-1\">\n" +
-        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
-        "                                            Юридический адрес\n" +
-        "                                        </dt>\n" +
-        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
-        "                                            Нижний Новгород, Пушкина 18, оф. 631\n" +
-        "                                        </dd>\n" +
-        "                                    </div>\n" +
-        "                                    <div class=\"sm:col-span-1\">\n" +
-        "                                        <dt class=\"text-sm font-medium text-gray-500\">\n" +
-        "                                            Директор\n" +
-        "                                        </dt>\n" +
-        "                                        <dd class=\"mt-1 text-sm text-gray-900\">\n" +
-        "                                            Колобов Д.В.\n" +
-        "                                        </dd>\n" +
-        "                                    </div>\n"
-
-
-
-
-
-</script>
-
-<script>
 </script>
 
 <svelte:head>
     <title>{title}</title>
+    <meta name="description" content="краткое описание страницы">
 </svelte:head>
-
-
-{name}
 <div class="content">
 
     <div class="min-h-full">
@@ -100,7 +58,7 @@
                     <div class="w-full py-5 lg:border-t lg:border-white lg:border-opacity-20">
                         <!-- Left nav -->
                         <div class="text-4xl text-white">
-                            {about}
+                            О компании
                         </div>
                         <div class="px-12 lg:px-0">
                             <!-- Search -->
@@ -197,7 +155,38 @@
                             </div>
                             <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
                                 <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
-                                    {@html dataCompany}
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            ИНН/КПП
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900">
+                                            5262354912/526201001
+                                        </dd>
+                                    </div>
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            ОГРН
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900">
+                                            1185275008665
+                                        </dd>
+                                    </div>
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Юридический адрес
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900">
+                                            Нижний Новгород, Пушкина 18, оф. 631
+                                        </dd>
+                                    </div>
+                                    <div class="sm:col-span-1">
+                                        <dt class="text-sm font-medium text-gray-500">
+                                            Директор
+                                        </dt>
+                                        <dd class="mt-1 text-sm text-gray-900">
+                                            Колобов Д.В.
+                                        </dd>
+                                    </div>
                                     <div class="sm:col-span-2">
                                         <dt class="text-sm font-medium text-gray-500">
                                             Деятельность
@@ -211,7 +200,7 @@
                                     </div>
                                     <div class="sm:col-span-2">
                                         <dt class="text-sm font-medium text-gray-500">
-                                            Типовые договора
+                                            Памятка
                                         </dt>
                                         <dd class="mt-1 text-sm text-gray-900">
                                             <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
@@ -226,7 +215,7 @@
                                                                   clip-rule="evenodd"/>
                                                         </svg>
                                                         <span class="ml-2 flex-1 w-0 truncate">
-                                                            Договор_на_оказание_услуг1.pdf
+                                                            услуги.pdf
                                                           </span>
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
@@ -248,7 +237,7 @@
                                                                   clip-rule="evenodd"/>
                                                         </svg>
                                                         <span class="ml-2 flex-1 w-0 truncate">
-                                                            Договор_на_оказание_услуг2.pdf
+                                                            контакты.pdf
                                                           </span>
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
