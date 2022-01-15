@@ -1,14 +1,13 @@
 <script>
+    import { fade } from 'svelte/transition';
     import { bool } from '../../stores.js';
-    import {bolFun} from "../../hooks";
+    import { useAction } from "../../hooks";
 
-    function changeVisibleFormMeasurement() {
-        bool.update(bolFun);
-    }
+    const changeVisibleFormMeasurement = () => bool.update(useAction)
 
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
-
+    //TODO Реализуй геттер в хуке
 
 
     // let visibleFormMeasurement = false
@@ -16,7 +15,6 @@
     //     visibleFormMeasurement = !visibleFormMeasurement;
     // }
 
-    import { fade } from 'svelte/transition';
 
 
 </script>

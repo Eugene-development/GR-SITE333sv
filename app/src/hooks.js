@@ -20,4 +20,5 @@ export const handle = async ({ request, resolve }) => {
 };
 
 
-export const bolFun = (param) => !param
+export const useAction = param => !param
+// export const useGetter = param => !param
