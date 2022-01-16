@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<footer class="bg-gradient-to-r from-sky-700 to-cyan-500" aria-labelledby="footerHeading">
+<footer class="bg-gradient-to-r from-sky-700 to-cyan-600" aria-labelledby="footerHeading">
     <h2 id="footerHeading" class="sr-only">Footer</h2>
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-gray-50">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
