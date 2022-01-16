@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    {#each specialists as {id, speciality, description, name, old, text }, i (id)}
+    {#each specialists as {id, speciality, description, name, age, text }, i (id)}
         <div class="-mt-24 pb-8">
             <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -64,7 +64,7 @@
                         <dl class="space-y-12">
                             <div>
                                 <dt class="text-lg leading-6 font-medium text-gray-900">
-                                    {name}, {old}
+                                    {name}, {age}
                                 </dt>
                                 <dd class="mt-2 text-base text-gray-500">
                                     {text}
