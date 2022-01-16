@@ -78,8 +78,9 @@
                     </div>
                     <nav class="hidden space-x-8 md:flex md:ml-10 ">
                         {#each menu as { value, link }, i}
-
                             <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
+                        {:else}
+                            <p>Нет данных!</p>
                         {/each}
                     </nav>
 

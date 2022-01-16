@@ -16,27 +16,10 @@
 
                 <!-- Right section on desktop -->
                 <div class="hidden lg:ml-4 lg:flex lg:items-center lg:py-5 lg:pr-0.5">
-                    <!--            <button type="button" class="flex-shrink-0 p-1 text-cyan-200 rounded-full hover:text-white hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-white">-->
-                    <!--              <span class="sr-only">View notifications</span>-->
-                    <!--              &lt;!&ndash; Heroicon name: outline/bell &ndash;&gt;-->
-                    <!--              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">-->
-                    <!--                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />-->
-                    <!--              </svg>-->
-                    <!--            </button>-->
-
-                    <!-- Profile dropdown -->
-                    <!--            <div class="ml-4 relative flex-shrink-0">-->
-                    <!--              <div>-->
-                    <!--                <button type="button" class="bg-white rounded-full flex text-sm ring-2 ring-white ring-opacity-20 focus:outline-none focus:ring-opacity-100" id="user-menu-button" aria-expanded="false" aria-haspopup="true">-->
-                    <!--                  <span class="sr-only">Open user menu</span>-->
-                    <!--                  <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">-->
-                    <!--                </button>-->
-                    <!--              </div>-->
-
-                    <!--            </div>-->
+<!--                    some content-->
                 </div>
 
-                <div class="w-full py-5 lg:border-t lg:border-white lg:border-opacity-20">
+                <div class="w-full  py-5 lg:border-t lg:border-white lg:border-opacity-20">
                     <!-- Left nav -->
                     <div class="text-4xl text-white">
                         Специалисты
@@ -67,7 +50,7 @@
         </div>
     </div>
 
-    {#each specialists as { speciality, description, name, old, text }, i}
+    {#each specialists as {id, speciality, description, name, old, text }, i (id)}
         <div class="-mt-24 pb-8">
             <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -92,5 +75,7 @@
                 </div>
             </div>
         </div>
+    {:else}
+        <p>Нет данных!</p>
     {/each}
 </div>

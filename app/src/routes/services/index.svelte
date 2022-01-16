@@ -69,51 +69,51 @@
     </div>
 
 
-    <div class="bg-white">
-        <div class="max-w-2xl mx-auto py-8 px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Подробнее</h2>
-                <p class="mt-4 text-gray-500">Выберите наиболее приемлимый для вас вариант сотрудничества с нашей компанией.</p>
-            </div>
+<!--    <div class="bg-white">-->
+<!--        <div class="max-w-2xl mx-auto py-8 px-4 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">-->
+<!--            <div class="max-w-3xl mx-auto text-center">-->
+<!--                <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Подробнее</h2>-->
+<!--                <p class="mt-4 text-gray-500">Выберите наиболее приемлимый для вас вариант сотрудничества с нашей компанией.</p>-->
+<!--            </div>-->
 
-            <div class="mt-16 space-y-16">
-                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
-                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
-                        <h3 class="text-2xl font-medium text-gray-900">Косметический ремонт</h3>
-                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
-                    </div>
-                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
-                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
-                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
-                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
-                        <h3 class="text-2xl font-medium text-gray-900">Стандартный ремонт</h3>
-                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
-                    </div>
-                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
-                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
-                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">
-                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">
-                        <h3 class="text-2xl font-medium text-gray-900">Капитальный ремонт</h3>
-                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>
-                    </div>
-                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">
-                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">
-                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">
-                        </div>
-                    </div>
-                </div>
+<!--            <div class="mt-16 space-y-16">-->
+<!--                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">-->
+<!--                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">-->
+<!--                        <h3 class="text-2xl font-medium text-gray-900">Косметический ремонт</h3>-->
+<!--                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch prove interior with ease, and the front pouch provides a convenient place for your charger cable.</p>-->
+<!--                    </div>-->
+<!--                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">-->
+<!--                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">-->
+<!--                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">-->
+<!--                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">-->
+<!--                        <h3 class="text-2xl font-medium text-gray-900">Стандартный ремонт</h3>-->
+<!--                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>-->
+<!--                    </div>-->
+<!--                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">-->
+<!--                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">-->
+<!--                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8 lg:items-center">-->
+<!--                    <div class="mt-6 lg:mt-0 lg:row-start-1 lg:col-span-5 xl:col-span-4 lg:col-start-1">-->
+<!--                        <h3 class="text-2xl font-medium text-gray-900">Капитальный ремонт</h3>-->
+<!--                        <p class="mt-2 text-base text-gray-500">Our laptop sleeve is compact and precisely fits 13&quot; devices. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your charger cable.</p>-->
+<!--                    </div>-->
+<!--                    <div class="flex-auto lg:row-start-1 lg:col-span-7 xl:col-span-8 lg:col-start-6 xl:col-start-5">-->
+<!--                        <div class="aspect-w-5 aspect-h-2 rounded-lg bg-gray-100 overflow-hidden shadow-xl">-->
+<!--                            <img src="/image/kosmeticheskij-remont-kvartiry.jpg" alt="White canvas laptop sleeve with gray felt interior, silver zipper, and tan leather zipper pull." class="object-center object-cover">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-            </div>
-        </div>
-    </div>
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 
     <!-- This example requires Tailwind CSS v2.0+ -->
