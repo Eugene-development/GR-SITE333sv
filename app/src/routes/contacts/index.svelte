@@ -99,12 +99,12 @@
     <!-- Be sure to use this with a layout container that is full-width on mobile -->
     <div class="-mt-24 pb-8 bg-gray-50 mx-16 overflow-hidden shadow sm:rounded-lg shadow-xl">
         <div class="px-4 py-4 sm:p-6">
-            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=201939254246" width="1024" height="500"
+            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=201939254246" width="1024" height="500" title="map"
                     frameborder="0" class="mx-auto "></iframe>
         </div>
     </div>
 
-    {#each contacts as {id, city, address, phone, email, manager}, i (id)}
+    {#each contacts as {id, city, address, phones, email, manager}, i (id)}
         <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-24 lg:px-8">
             <div class="divide-y-2 divide-gray-200">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -152,7 +152,13 @@
                                         Phone number
                                     </dt>
                                     <dd>
-                                        {phone}
+                                        <!--{phones}-->
+                                        {#each phones as {work, mobile}}
+                                            {work}<br>
+                                            {mobile}
+                                        {:else}
+                                            <p>Нет данных!</p>
+                                        {/each}
                                     </dd>
                                 </div>
                             </dl>
