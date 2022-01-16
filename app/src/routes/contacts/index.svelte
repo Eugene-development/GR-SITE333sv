@@ -114,7 +114,7 @@
                     <div class="mt-8 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-12 lg:mt-0 lg:col-span-2">
                         <div>
                             <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Офис:
+                                Адрес офиса:
                             </h3>
                             <dl class="mt-2 text-base text-gray-500">
                                 <div>
@@ -144,7 +144,7 @@
                         </div>
                         <div>
                             <h3 class="text-lg leading-6 font-medium text-gray-900">
-                                Телефон:
+                                Телефоны:
                             </h3>
                             <dl class="mt-2 text-base text-gray-500">
                                 <div class="mt-1">
@@ -153,9 +153,8 @@
                                     </dt>
                                     <dd>
                                         <!--{phones}-->
-                                        {#each phones as {work, mobile}}
-                                            {work}<br>
-                                            {mobile}
+                                        {#each Object.entries(phones) as [key, value]}
+                                            <p>{value}</p>
                                         {:else}
                                             <p>Нет данных!</p>
                                         {/each}
