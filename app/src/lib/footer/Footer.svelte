@@ -1,5 +1,8 @@
 <script>
     import { page } from '$app/stores';
+
+    const now = new Date();
+    const year = now.getFullYear()
 </script>
 
 <div class=" px-12 py-20 bg-gray-50" id="anchor6">
@@ -200,7 +203,7 @@
 
 <!--            </div>-->
             <p class="mt-8 text-base  md:mt-0 md:order-1">
-                &copy; ООО "Гостремонт" 2018-2021. Все цены не являются публичной офертой. Все права защищены. All rights reserved.
+                &copy; ООО "Гостремонт" 2015-{year}. Все цены не являются публичной офертой. Все права защищены. All rights reserved.
             </p>
         </div>
     </div>
