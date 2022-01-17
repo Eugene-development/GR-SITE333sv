@@ -2,7 +2,6 @@
     import { useSpecialists } from "../../use/content/specialists";
     const {specialists} = useSpecialists;
 
-
 </script>
 
 <div class="bg-white ">
@@ -21,10 +20,7 @@
 
                 <div class="w-full  py-5 lg:border-t lg:border-white lg:border-opacity-20">
                     <!-- Left nav -->
-                    <div class="text-4xl text-white">
-                        Специалисты
-
-                    </div>
+                    <div class="text-4xl text-white">Специалисты</div>
                     <div class="px-12 lg:px-0">
                         <!-- Search -->
                         <!--                <div class="max-w-xs mx-auto w-full lg:max-w-md">-->
@@ -50,7 +46,7 @@
         </div>
     </div>
 
-    {#each specialists as {id, speciality, description, name, age, text }, i (id)}
+    {#each specialists as {id, speciality, description, workers, text}, i (id)}
         <div class="-mt-24 pb-8">
             <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -64,7 +60,11 @@
                         <dl class="space-y-12">
                             <div>
                                 <dt class="text-lg leading-6 font-medium text-gray-900">
-                                    {name}, {age}
+                                    {#each workers as {id, name, age}, i (id)}
+                                        <span class="inline-flex items-center m-2 px-2.5 py-1.5 rounded-md text-sm font-medium bg-gray-200 text-gray-800">{name} ({age})</span>
+                                    {:else}
+                                        <p>Нет данных!</p>
+                                    {/each}
                                 </dt>
                                 <dd class="mt-2 text-base text-gray-500">
                                     {text}
