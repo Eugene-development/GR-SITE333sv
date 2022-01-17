@@ -11,7 +11,7 @@
         <div class="mt-6 flow-root">
             <div class="-mb-8">
 
-                {#each timeLine as {id, date, event}, i (id)}
+                {#each timeLine as {id, date, event}, i}
                     <div class="relative pb-8">
                         {#if timeLine.length - 1 !== i}
                         <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
