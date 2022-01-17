@@ -243,7 +243,7 @@
                                                           </span>
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
-                                                        <a href="/"
+                                                        <a href="static/docs/agreement.docx" download
                                                            class="font-medium text-blue-600 hover:text-blue-500">
                                                             Скачать
                                                         </a>
