@@ -38,7 +38,6 @@
                                     2018
                                 </a>
 
-
                                 <a href="#" class="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
                                     2019
                                 </a>
@@ -49,6 +48,10 @@
 
                                 <a href="#" class="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
                                     2021
+                                </a>
+
+                                <a href="#" class="text-cyan-100 text-sm font-medium rounded-md bg-white bg-opacity-0 px-3 py-2 hover:bg-opacity-10">
+                                    2022
                                 </a>
                             </nav>
                         </div>
@@ -172,7 +175,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Мы храним отзывы о нашей компании за весь период работы с 2018 года.
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -200,7 +203,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Показываем все отзывы как есть. Не стесняемся и негативных, потому что они позволяют нам стать лучше!
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -228,7 +231,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Мы стараемся, что бы наши клиенты рекомендовали нас своим знакомым и близким людям.
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -256,7 +259,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Стараемся делать нашу работу максимально открытой и прозрачной для всех.
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -284,7 +287,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Ваши отзывы это всегда отличная возможность услышать ваше мнение о нас.
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">
@@ -314,7 +317,7 @@
                                         </a>
                                     </h3>
                                     <p class="mt-2 text-sm text-gray-500">
-                                        Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.
+                                        Указывая нам о минусах и плюсах вы помогаете нашим специалистам понять как работать ещё лучше.
                                     </p>
                                 </div>
                                 <span class="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400" aria-hidden="true">

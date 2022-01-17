@@ -152,7 +152,7 @@
 
 
     {#if visibleFormMeasurement}
-        <div transition:fade>
+        <div>
                 <div  class="z-40 fixed inset-0 overflow-hidden" aria-labelledby="slide-over-title"
                       role="dialog" aria-modal="true">
                     <div class="absolute inset-0 overflow-hidden">
