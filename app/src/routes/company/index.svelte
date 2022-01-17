@@ -18,6 +18,8 @@
     const about = 'О компании';
     const title = 'О компании "Гост Ремонт"'
 
+   export const isWorld = false
+
 </script>
 
 <svelte:head>
@@ -201,10 +203,12 @@
                                         </dd>
                                     </div>
                                     <div class="sm:col-span-2">
-                                        <dt class="text-sm font-medium text-gray-500">
-                                            Документы для скачивания
+                                        <dt class="text-sm font-medium text-{isWorld ? 'red' : 'green'}-500">
+                                        <dt class="text-sm font-medium {isWorld ? 'text-red-500' : 'text-green-600'}">
+<!--                                        <dt class="text-sm font-medium  text-red-500={true} text-red-500={false}">-->
+                                            Документы для скачивания:
                                         </dt>
-                                        <dd class="mt-1 text-sm text-gray-900">
+                                        <dd class="mt-2 text-sm text-gray-900">
                                             <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
                                                 <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
                                                     <div class="w-0 flex-1 flex items-center">
