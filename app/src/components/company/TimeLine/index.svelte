@@ -9,10 +9,9 @@
 
         <!-- Activity Feed -->
         <div class="mt-6 flow-root">
-            <ul class="-mb-8">
+            <div class="-mb-8">
 
                 {#each timeLine as {id, date, event}, i (id)}
-                <li>
                     <div class="relative pb-8">
                         {#if timeLine.length - 1 !== i}
                         <span class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></span>
@@ -36,12 +35,11 @@
                             </div>
                         </div>
                     </div>
-                </li>
                 {:else}
                     <p>Нет данных!</p>
                 {/each}
 
-            </ul>
+            </div>
         </div>
         <div class="mt-6 flex flex-col justify-stretch">
             <button type="button" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 cursor-not-allowed">

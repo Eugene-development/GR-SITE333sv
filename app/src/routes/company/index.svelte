@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="sm:col-span-2">
                                         <dt class="text-sm font-medium text-{isWorld ? 'red' : 'green'}-500">
-                                        <dt class="text-sm font-medium {isWorld ? 'text-red-500' : 'text-green-600'}">
+                                        <dt class="text-sm font-medium {isWorld ? 'text-red-500' : 'text-cyan-600'}">
 <!--                                        <dt class="text-sm font-medium  text-red-500={true} text-red-500={false}">-->
                                             Документы для скачивания:
                                         </dt>
@@ -226,7 +226,7 @@
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
                                                         <a href="static/docs/agreement.docx" download
-                                                           class="font-medium text-blue-600 hover:text-blue-500">
+                                                           class="font-medium text-cyan-600 hover:text-blue-500">
                                                             Скачать
                                                         </a>
                                                     </div>
