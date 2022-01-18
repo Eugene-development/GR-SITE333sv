@@ -312,59 +312,6 @@
 
 
 
-
-		<div class="relative my-16  bg-white overflow-hidden">
-
-			<div class="relative px-2 sm:px-2 lg:px-2">
-				<div class="text-lg  text-gray-500 max-w-prose mx-auto">
-					<h1>
-						<span class=" block text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-800 sm:text-4xl">Ремонт квартиры от компании <br> "ГОСТ РЕМОНТ"</span>
-					</h1>
-					<p class="mt-12 text-xl text-gray-500 leading-8">
-						Если вы решили сделать ремонт, то доверьтесь добросовестному исполнителю! В результате ваша квартира
-						заиграет новыми красками и при этом вы сохраните свой бюджет, так как цены на наши услуги приемлемы.<br>
-						Ремонтно-строительная компания «Гостремонт» - надежный партнер, проверенный
-						временем и сотнями успешными работами в портфолио. И мы надеемся вы станете очередным довольным клиентом.<br>
-						Компания гарантирует качественный ремонт квартир под ключ в Нижнем Новгороде. Предлагает отделку
-						внутренних помещений (эконом, комфорт, премиум), а также занимается установкой натяжных потолков различной
-						категории сложности (стандартные, двухуровневые, парящие).<br>
-						«Гостремонт» - это:
-					</p>
-					<ul class="text-xl text-gray-500 leading-8">
-						<li>
-							<span class="font-bold">Честный и прозрачный расчет</span><br>
-							Окончательная стоимость работ не меняется с момента заключения контракта.
-							Мы следим за неукоснительным выполнением договорённостей.
-						</li>
-						<li>
-							<span class="font-bold">Качественные материалы</span><br>
-							Только сертифицированное оборудование и материалы, соответствующие отечественным и мировым стандартам,
-							приобрести которые вы так же можете у нас по низким ценам
-						</li>
-						<li>
-							<span class="font-bold">Внимание к каждому клиенту</span><br>
-							Мы ценим каждого клиента, обратившегося к нам и стремимся делать свою работу так, чтобы видеть
-							искреннюю радость на лице клиента по окончании выполнения работ.
-						</li>
-					</ul>
-					<p class="text-xl text-gray-500 leading-8">
-						Ждём ваших обращений в нашу компанию! Наши менеджеры постараются дать вам исчерпывающую информацию.
-					</p>
-				</div>
-				<div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-					<!--        <h3>Ждём вас!!!</h3>-->
-					<!--            <figure>-->
-					<!--                        <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" width="1310" height="873">-->
-					<!--            </figure>-->
-					<!--                    <p>Purus morbi dignissim senectus mattis <a href="/">adipiscing</a>. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>-->
-					<!--                    <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>-->
-				</div>
-			</div>
-		</div>
-
-
-
-
 		<!-- Testimonial section -->
 		<div class="pb-16 bg-gradient-to-tr from-green-400 via-green-600  to-green-500 lg:pb-0 lg:z-5 lg:relative">
 			<div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
@@ -408,7 +355,54 @@
 
 
 
+		<div class="relative my-24  bg-white overflow-hidden">
 
+			<div class="relative px-2 sm:px-2 lg:px-2">
+				<div class="text-lg  text-gray-500 max-w-prose mx-auto">
+					<h1>
+						<span class=" block text-4xl text-center leading-8 font-extrabold tracking-tight text-gray-800 sm:text-4xl">Ремонт вашей квартиры</span>
+					</h1>
+					<p class="mt-12 text-xl text-gray-500 leading-8">
+						Если вы решили сделать ремонт, то доверьтесь добросовестному исполнителю! В результате ваша квартира
+						заиграет новыми красками и при этом вы сохраните свой бюджет, так как цены на наши услуги приемлемы.<br>
+						Ремонтно-строительная компания «Гостремонт» - надежный партнер, проверенный
+						временем и сотнями успешными работами в портфолио. И мы надеемся вы станете очередным довольным клиентом.<br>
+						Компания гарантирует качественный ремонт квартир под ключ в Нижнем Новгороде. Предлагает отделку
+						внутренних помещений (эконом, комфорт, премиум), а также занимается установкой натяжных потолков различной
+						категории сложности (стандартные, двухуровневые, парящие).<br>
+						«Гостремонт» - это:
+					</p>
+					<ul class="text-xl text-gray-500 leading-8">
+						<li>
+							<span class="font-bold">Честный и прозрачный расчет</span><br>
+							Окончательная стоимость работ не меняется с момента заключения контракта.
+							Мы следим за неукоснительным выполнением договорённостей.
+						</li>
+						<li>
+							<span class="font-bold">Качественные материалы</span><br>
+							Только сертифицированное оборудование и материалы, соответствующие отечественным и мировым стандартам,
+							приобрести которые вы так же можете у нас по низким ценам
+						</li>
+						<li>
+							<span class="font-bold">Внимание к каждому клиенту</span><br>
+							Мы ценим каждого клиента, обратившегося к нам и стремимся делать свою работу так, чтобы видеть
+							искреннюю радость на лице клиента по окончании выполнения работ.
+						</li>
+					</ul>
+					<p class="text-xl text-gray-500 leading-8">
+						Ждём ваших обращений в нашу компанию! Наши менеджеры постараются дать вам исчерпывающую информацию.
+					</p>
+				</div>
+				<div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+					<!--        <h3>Ждём вас!!!</h3>-->
+					<!--            <figure>-->
+					<!--                        <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3" alt="" width="1310" height="873">-->
+					<!--            </figure>-->
+					<!--                    <p>Purus morbi dignissim senectus mattis <a href="/">adipiscing</a>. Amet, massa quam varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales cursus tristique. Tincidunt sed tempus ut viverra ridiculus non molestie. Gravida quis fringilla amet eget dui tempor dignissim. Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum convallis quam.</p>-->
+					<!--                    <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit.</p>-->
+				</div>
+			</div>
+		</div>
 
 
 		<!-- CTA Section -->
