@@ -9,5 +9,7 @@
     <slot />
   </main>
 </Header>
+
   <slot />
+
 <Footer/>
