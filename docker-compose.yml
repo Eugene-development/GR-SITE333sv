@@ -8,7 +8,7 @@ services:
     container_name: "${COMPOSE_PROJECT_NAME}_PROJECT"
     restart: always
     ports:
-      - "4165:4165"
+      - "4160:4160"
     command:
       "npm run preview"
 
