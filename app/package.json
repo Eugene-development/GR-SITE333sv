@@ -2,10 +2,10 @@
   "name": "app",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --port 5555 --host",
+    "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview --port 4165 --host"
+    "preview": "svelte-kit preview --host"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
