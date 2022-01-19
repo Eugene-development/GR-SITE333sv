@@ -3,7 +3,7 @@ const prices = [
         id: 1,
         name: 'Косметический',
         price: '2500',
-        description: 'some text',
+        description: 'Если нужно срочно обновить состояние вашей квартиры',
         works: [
             {
                 id: 1,
@@ -35,7 +35,7 @@ const prices = [
         id: 2,
         name: 'Стандартный',
         price: '4500',
-        description: '',
+        description: 'Подходит, если нужно провести плановый ремонт квартиры',
         works: [
             {
                 id: 1,
@@ -67,7 +67,7 @@ const prices = [
         id: 3,
         name: 'Капитальный',
         price: '8500',
-        description: '',
+        description: 'Нужен, когда необходимо полностью отремонтировать "под ключ"',
         works: [
             {
                 id: 1,
@@ -87,7 +87,7 @@ const prices = [
             },
             {
                 id: 3,
-                name: 'Монтаж натяжных потолков и ГВЛ'
+                name: 'Монтаж натяжных ПВХ потолков и из ГВЛ'
             },
             {
                 id: 3,
