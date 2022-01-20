@@ -6,7 +6,7 @@
     "build": "rm -rf build && svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview --host --port 4160",
-    "start": "node build/index.js"
+    "start": "PORT=9999 node build/index.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

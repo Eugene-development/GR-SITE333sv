@@ -22,6 +22,8 @@
         <section class="-mt-32 max-w-7xl mx-auto relative z-10 pb-32 px-4 sm:px-6 lg:px-8" aria-labelledby="contact-heading">
             <h2 class="sr-only" id="contact-heading">Консультация</h2>
             <div class="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+
+                {#each prices as {name, text}}
                 <div class="flex flex-col bg-white rounded-2xl shadow-xl">
                     <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                         <div class="absolute top-0 p-5 inline-block bg-cyan-700 rounded-xl shadow-lg transform -translate-y-1/2">
@@ -30,45 +32,18 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-medium text-gray-900">Косметический ремонт</h3>
-                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
+                        <h3 class="text-xl font-medium text-gray-900">{name} ремонт</h3>
+                        <p class="mt-4 text-base text-gray-500">{text}</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
                         <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true"> &rarr;</span></a>
                     </div>
                 </div>
+                {:else}
+                    <p>Нет данных!</p>
+                {/each}
 
-                <div class="flex flex-col bg-white rounded-2xl shadow-xl">
-                    <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                        <div class="absolute top-0 p-5 inline-block bg-cyan-700 rounded-xl shadow-lg transform -translate-y-1/2">
-                            <!-- Heroicon name: outline/support -->
-                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-medium text-gray-900">Стандартный ремонт</h3>
-                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                    </div>
-                    <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true">  &rarr;</span></a>
-                    </div>
-                </div>
 
-                <div class="flex flex-col bg-white rounded-2xl shadow-xl">
-                    <div class="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                        <div class="absolute top-0 p-5 inline-block bg-cyan-700 rounded-xl shadow-lg transform -translate-y-1/2">
-                            <!-- Heroicon name: outline/newspaper -->
-                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-medium text-gray-900">Капитальный ремонт</h3>
-                        <p class="mt-4 text-base text-gray-500">Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.</p>
-                    </div>
-                    <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true"> &rarr;</span></a>
-                    </div>
-                </div>
             </div>
         </section>
     </div>

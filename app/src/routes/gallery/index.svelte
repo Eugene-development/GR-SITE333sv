@@ -1,5 +1,6 @@
 <script>
     import {useGallery} from "../../use/content/gallery";
+
     const {gallery} = useGallery
 
     const title = 'Галерея работ'
@@ -108,8 +109,7 @@
                             <p class="text-base font-semibold text-gray-900">
                                 {street} - {square} м/кв
                             </p>
-                            <p class="mt-3 text-base text-gray-500">
-                                {text} </p>
+                            <p class="mt-3 text-base text-gray-500">{text} </p>
                         </div>
                     </div>
                     <div class="mt-6 flex items-center">
@@ -122,22 +122,19 @@
                         </div>
                         <div class="ml-3">
                             <p class="text-sm font-medium text-gray-900">
-                                <a href="/" class="hover:underline">
-                                    {name}
-                                </a>
+                                <span class="hover:underline">{name}</span>
                             </p>
                             <div class="flex space-x-1 text-sm text-gray-500">
 <!--                                                          <time datetime="2020-02-12">-->
 <!--                                                            Feb 12, 2020-->
 <!--                                                          </time>-->
-                                <p>
-                                    "{testimonial}"
-                                </p>
+                                <p>"{testimonial}"</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             {:else}
                 <p>Нет данных!</p>
             {/each}
