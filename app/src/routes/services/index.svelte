@@ -221,8 +221,6 @@
                             </p>
                         </dd>
                     </div>
-
-                    <!-- More questions... -->
                 </dl>
             </div>
             {:else}
