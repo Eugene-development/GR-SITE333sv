@@ -39,10 +39,8 @@
 					<div
 							class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
 						<div class="lg:py-24">
-							<a href="/"
-									  class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
-                      <span
-							  class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Мы работаем</span>
+							<a href="/" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
+								<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Мы работаем</span>
 								<span class="ml-4 text-sm">Посетите наш офис</span>
 								<!-- Heroicon name: solid/chevron-right -->
 								<svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -64,15 +62,15 @@
 							<div class="mt-10 sm:mt-12">
 								<div  class="sm:max-w-xl sm:mx-auto lg:mx-0">
 									<div class="sm:flex">
+
+
+										{#if !visibleFormPhone}
+
 										<div class="min-w-0 flex-1">
 											<label for="phone" class="sr-only">Phone</label>
-											<input
-													id="phone" type="tel" placeholder="Запишите ваш телефон"
+											<input id="phone" type="tel" placeholder="Запишите ваш телефон"
 													class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 										</div>
-
-
-
 										<div class="mt-3 sm:mt-0 sm:ml-3">
 											<button
 													on:click={changeVisibleFormPhone}
@@ -81,13 +79,16 @@
 												Отправить
 											</button>
 										</div>
+										{/if}
 
 
+										{#if visibleFormPhone}
 										<div class="mt-3 sm:mt-0 ">
 											<span class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 											  Спасибо за доверие
 											</span>
 										</div>
+										{/if}
 
 									</div>
 									<p class="mt-3 text-sm text-gray-300 sm:mt-4">В течении дня с вами свяжется специалист и даст подробную консультацию.
