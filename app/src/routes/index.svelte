@@ -3,13 +3,26 @@
 </script>
 
 <script>
-	import Counter from '$lib/Counter.svelte';
+
+	import {bool} from '../stores.js';
+	import {useVisible} from "../use/visible";
+	import {sendForm} from '../stores.js';
+
+	const {visible} = useVisible;
+	const changeVisibleFormPhone = () => sendForm.update(visible)
+	let visibleFormPhone;
+	sendForm.subscribe(value => visibleFormPhone = value);
+
 </script>
 
 <svelte:head>
 	<title>Главная</title>
 </svelte:head>
 
+<div>
+	{visibleFormPhone}
+
+</div>
 <section>
 	<main>
 
@@ -49,33 +62,37 @@
 								Дарим каждому клиенту дизайн проект!
 							</p>
 							<div class="mt-10 sm:mt-12">
-								<form  class="sm:max-w-xl sm:mx-auto lg:mx-0">
+								<div  class="sm:max-w-xl sm:mx-auto lg:mx-0">
 									<div class="sm:flex">
 										<div class="min-w-0 flex-1">
 											<label for="phone" class="sr-only">Phone</label>
 											<input
-
-
 													id="phone" type="tel" placeholder="Запишите ваш телефон"
 													class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 										</div>
-										<div  class="mt-3 sm:mt-0 sm:ml-3">
-											<button type="submit"
+
+
+
+										<div class="mt-3 sm:mt-0 sm:ml-3">
+											<button
+													on:click={changeVisibleFormPhone}
+													type="submit"
 													class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-600 to-cyan-700 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 												Отправить
 											</button>
 										</div>
-										<div  class="mt-3 sm:mt-0 ">
-                            <span
-									class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
-                              Спасибо за доверие
-                            </span>
+
+
+										<div class="mt-3 sm:mt-0 ">
+											<span class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
+											  Спасибо за доверие
+											</span>
 										</div>
+
 									</div>
-									<p class="mt-3 text-sm text-gray-300 sm:mt-4">В течении дня с вами свяжется специалист и даст
-										подробную консультацию.
+									<p class="mt-3 text-sm text-gray-300 sm:mt-4">В течении дня с вами свяжется специалист и даст подробную консультацию.
 										<br>Услуга бесплатная.</p>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -1,19 +1,16 @@
 <script>
-    import { fade, fly } from 'svelte/transition';
-    import { bool } from '../../stores.js';
-    import { useHeader } from "../../use/content/header";
+    import {bool} from '../../stores.js';
+    import {useHeader} from "../../use/content/header";
     // import { useTest } from "../../hooks";
+    import {useVisible} from "../../use/visible";
 
-   import { useVisible } from "../../use/visible";
-   const { visible } = useVisible;
-
-
+    const {visible} = useVisible;
     const changeVisibleFormMeasurement = () => bool.update(visible)
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
 
 
-    const { menu, phone } = useHeader;
+    const {menu, phone} = useHeader;
 
     // const {console, m} = useTest;
     // const result = console(877)

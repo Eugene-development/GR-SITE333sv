@@ -1,5 +1,7 @@
 import { writable } from 'svelte/store';
 
 
-const bolStart = false;
-export const bool = writable(bolStart);
+export const bool = writable(false);
+
+
+export const sendForm = writable(false)
