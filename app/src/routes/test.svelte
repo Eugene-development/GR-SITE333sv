@@ -8,7 +8,7 @@
     export async function load({ params, fetch, session, stuff }) {
         // const url = `https://jsonplaceholder.typicode.com/users`;
         const url = `get-all-category/`;
-
+console.log('testtttttt')
         const confReq =  {
             baseURL: import.meta.env.VITE_API_CRUD,
             headers: {

@@ -225,7 +225,7 @@
                                                           </span>
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
-                                                        <a href="../../../docs/agreement.docx" download
+                                                        <a href="https://test-bucket-7778.s3.eu-central-1.amazonaws.com/agreement.docx" download
                                                            class="font-medium text-cyan-600 hover:text-blue-500">
                                                             Скачать
                                                         </a>

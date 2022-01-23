@@ -1,6 +1,14 @@
 <script>
     import {useServices} from "../../use/content/services";
     const {prices, services} = useServices
+
+    import { bool } from '../../stores.js';
+    import { useVisible } from "../../use/visible";
+    const { visible } = useVisible;
+    const changeVisibleFormMeasurement = () => bool.update(visible)
+    let visibleFormMeasurement;
+    bool.subscribe(value => visibleFormMeasurement = value);
+
 </script>
 
 <div>
@@ -36,7 +44,7 @@
                         <p class="mt-4 text-base text-gray-500">{text}</p>
                     </div>
                     <div class="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                        <a href="#" class="text-base font-medium text-cyan-700 hover:text-green-600">Консультация<span aria-hidden="true"> &rarr;</span></a>
+                        <span on:click={changeVisibleFormMeasurement} class="text-base font-medium text-cyan-700 hover:text-green-700">Консультация <span aria-hidden="true">&rarr;</span></span>
                     </div>
                 </div>
                 {:else}
@@ -123,9 +131,9 @@
                             </p>
                             <div class="mt-6">
                                 <div class="rounded-md shadow">
-                                    <a href="/" class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-800 hover:bg-gray-900">
+                                    <span on:click={changeVisibleFormMeasurement} class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-800 hover:bg-gray-900">
                                         Получить консультацию
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                             <div class="mt-4 text-sm">
