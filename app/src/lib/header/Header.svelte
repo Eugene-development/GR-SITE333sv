@@ -87,7 +87,8 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-                <div class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top lg:hidden bg-gray-50">
+        {#if false}
+            <div class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top lg:hidden bg-gray-50">
                   <div class="rounded-lg shadow-md  ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                       <div>
@@ -130,6 +131,7 @@
                     </div>
                   </div>
                 </div>
+        {/if}
     </div>
 
 
