@@ -34,7 +34,7 @@
 
     <div class="relative">
         <div class="bg-gray-900 p-4">
-            <nav class="relative max-w-full mx-2 flex items-center justify-between px-1 sm:px-2" aria-label="Global">
+            <nav class="relative max-w-full mx-1 flex items-center justify-between px-1 sm:px-2" aria-label="Global">
                 <div class="flex items-center flex-1">
                     <div class="flex items-center justify-between w-full md:w-auto">
                         <a href="/">
@@ -56,7 +56,7 @@
                             </button>
                         </div>
                     </div>
-                    <nav class="hidden space-x-8 md:flex md:ml-10 ">
+                    <nav class="hidden space-x-8 md:flex md:mx-4 ">
                         {#each menu as { value, link }, i}
                             <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
                         {:else}
@@ -66,7 +66,7 @@
 
                 </div>
                 <div class="hidden md:flex md:items-center md:space-x-6">
-                    <p class="text-xl font-medium text-white hover:text-gray-300">
+                    <p class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
                         {phone}
                     </p>
                     <button on:click={changeVisibleFormMeasurement} type="button"
@@ -87,11 +87,11 @@
             From: "opacity-100 scale-100"
             To: "opacity-0 scale-95"
         -->
-                <div class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top md:hidden bg-gray-50">
+                <div class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top lg:hidden bg-gray-50">
                   <div class="rounded-lg shadow-md  ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                       <div>
-                        <img class="h-8 w-auto" src="./static/Logo/logo1.svg"
+                        <img class="h-8 w-auto" src="/Logo/logo1.svg"
                              alt="">
                       </div>
                       <div class="-mr-2">
