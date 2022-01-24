@@ -117,11 +117,9 @@
                     </div>
                     <div class="mt-6 flex items-center">
                         <div class="flex-shrink-0">
-                            <a href="/">
                                 <img class="h-10 w-10 rounded-full"
                                      src="{avatar}"
                                      alt="Daniela Metz">
-                            </a>
                         </div>
                         <div class="ml-3">
                             <p class="text-sm font-medium text-gray-900">

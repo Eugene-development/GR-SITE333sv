@@ -133,11 +133,11 @@
                                 кв/м
                               </span>
                             </div>
-                            <p class="mt-4 text-sm">
-                                <a href="/" class="font-medium text-gray-500 underline">
+                            <div class="mt-4 text-sm">
+                                <p class="font-medium text-gray-500 underline">
                                     За комплекс работ
-                                </a>
-                            </p>
+                                </p>
+                            </div>
                             <div class="mt-6">
                                 <div class="rounded-md shadow">
                                     <span on:click={changeVisibleFormMeasurement} class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-800 hover:bg-gray-900">
