@@ -18,7 +18,7 @@
 
             <div class="w-full  py-5 lg:border-t lg:border-white lg:border-opacity-20">
                 <!-- Left nav -->
-                <div class="text-4xl text-white">Главная/{crumb}</div>
+                <div class="text-3xl text-white"><a href="/">Главная</a> / {crumb}</div>
                 <div class="px-12 lg:px-0">
                     <!-- Search -->
                     <!--                <div class="max-w-xs mx-auto w-full lg:max-w-md">-->
