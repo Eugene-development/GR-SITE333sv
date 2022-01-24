@@ -121,8 +121,8 @@
                         <a href="contacts" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Контакты</a>
                       </div>
                       <div class="mt-6 px-5">
-                        <a href="#"
-                           class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700">Получить консультацию</a>
+                        <button on:click={changeVisibleFormMeasurement} type="button"
+                                class="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700">Получить консультацию</button>
                       </div>
                       <div class="mt-6 px-5">
                         <p class="text-center text-base font-medium text-gray-500">Услуга бесплатная</p>
