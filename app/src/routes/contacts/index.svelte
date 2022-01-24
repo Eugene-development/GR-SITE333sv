@@ -2,7 +2,16 @@
     import {useContacts} from "../../use/content/contacts";
 
     const {contacts} = useContacts;
+
+    const page = 'Контакты';
+    const title = 'Наши контакты'
+    const description = 'Связь с нами'
 </script>
+
+<svelte:head>
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+</svelte:head>
 
 <div class="bg-white">
 

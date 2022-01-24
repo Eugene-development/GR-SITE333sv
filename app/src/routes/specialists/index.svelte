@@ -2,7 +2,17 @@
     import { useSpecialists } from "../../use/content/specialists";
     const {specialists} = useSpecialists;
 
+    const page = 'Специалисты';
+    const title = 'Наши специалисты'
+    const description = 'Знакомство с нашими специалистами'
+
 </script>
+
+<svelte:head>
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+</svelte:head>
+
 
 <div class="bg-white ">
     <div class="pb-24 bg-gradient-to-r from-sky-700 to-cyan-500">

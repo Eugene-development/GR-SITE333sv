@@ -1,3 +1,16 @@
+<script>
+    const page = 'Отзывы';
+    const title = 'Отзывы о нашей компании'
+    const description = 'Знакомство с отзывами'
+
+</script>
+
+<svelte:head>
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+</svelte:head>
+
+
 <div class="min-h-full">
     <div class="pb-24 bg-gradient-to-r from-sky-800 to-cyan-600">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">

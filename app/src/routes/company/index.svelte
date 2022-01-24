@@ -15,8 +15,9 @@
     // // it so that it gets served as a static asset in prod
     // export const prerender = true;
 
-    const about = 'О компании';
+    const page = 'О компании';
     const title = 'О компании "Гост Ремонт"'
+    const description = 'Информация о компании'
 
    export const isWorld = false
 
@@ -24,8 +25,9 @@
 
 <svelte:head>
     <title>{title}</title>
-    <meta name="description" content="краткое описание страницы">
+    <meta name="description" content="{description}">
 </svelte:head>
+
 <div class="content">
 
     <div class="min-h-full">
@@ -203,7 +205,6 @@
                                         </dd>
                                     </div>
                                     <div class="sm:col-span-2">
-                                        <dt class="text-sm font-medium text-{isWorld ? 'red' : 'green'}-500">
                                         <dt class="text-sm font-medium {isWorld ? 'text-red-500' : 'text-cyan-600'}">
 <!--                                        <dt class="text-sm font-medium  text-red-500={true} text-red-500={false}">-->
                                             Документы для скачивания:

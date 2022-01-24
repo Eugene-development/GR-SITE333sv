@@ -9,7 +9,16 @@
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
 
+    const page = 'Услуги';
+    const title = 'Наши услуги по ремонту'
+    const description = 'Услуги и цены на них'
 </script>
+
+<svelte:head>
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+</svelte:head>
+
 
 <div>
 

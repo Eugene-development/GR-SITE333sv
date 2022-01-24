@@ -2,6 +2,7 @@
 	 //export const prerender = true;
 </script>
 
+
 <script>
 	import axios from "axios";
 
@@ -39,11 +40,14 @@
 		}
 	}
 
-
+	const page = 'Главная';
+	const title = 'Главная страница нашего сайта'
+	const description = 'Знакомство с общей информацией'
 </script>
 
 <svelte:head>
-	<title>Главная</title>
+	<title>{title}</title>
+	<meta name="description" content="{description}">
 </svelte:head>
 
 <div>

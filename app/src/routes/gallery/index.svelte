@@ -3,11 +3,14 @@
 
     const {gallery} = useGallery
 
-    const title = 'Галерея работ'
+    const page = 'Галерея';
+    const title = 'Галерея наших работ'
+    const description = 'Знакомство с нашими работами'
 </script>
 
 <svelte:head>
     <title>{title}</title>
+    <meta name="description" content="{description}">
 </svelte:head>
 
 <div class="pb-24 bg-gradient-to-r from-sky-800 to-cyan-600">
