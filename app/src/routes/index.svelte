@@ -26,8 +26,6 @@
 	}
 
 	async function sendPhone(){
-		console.log('123')
-
 		try {
 			const data = {phone: phone} ;
 			const res = await axios.post(url, data, apiCRUD);
