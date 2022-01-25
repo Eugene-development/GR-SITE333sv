@@ -15,16 +15,15 @@
     <meta name="description" content="{description}">
 </svelte:head>
 
-<div class="bg-white">
 
     <BreadCrumbs crumb="{page}"/>
 
 
     <!-- This example requires Tailwind CSS v2.0+ -->
     <!-- Be sure to use this with a layout container that is full-width on mobile -->
-    <div class="-mt-24 pb-8 bg-gray-50 mx-16 overflow-hidden shadow sm:rounded-lg shadow-xl">
-        <div class="px-4 py-4 sm:p-6">
-            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=201939254246" width="1024" height="500" title="map"
+    <div class="-mt-12 pb-8 bg-gray-50 mx-16 overflow-hidden shadow sm:rounded-lg shadow-xl">
+        <div class="px-4 py-4 sm:p-6 ">
+            <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=201939254246" width="1024" height="600" title="map"
                     frameborder="0" class="mx-auto "></iframe>
         </div>
     </div>
@@ -133,4 +132,3 @@
     {:else}
         <p>Нет данных!</p>
     {/each}
-</div>

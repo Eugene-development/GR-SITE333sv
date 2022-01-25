@@ -29,15 +29,9 @@
     <meta name="description" content="{description}">
 </svelte:head>
 
-<div class="content">
-
-    <div class="min-h-full">
         <BreadCrumbs crumb="{page}"/>
 
-
-
-
-        <main class="-mt-24 pb-8">
+        <main class="-mt-12 pb-8">
             <!-- Page header -->
             <div class="max-w-3xl mx-auto px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
                 <!--        <div class="flex items-center space-x-5">-->
@@ -62,7 +56,7 @@
                 <!--        </div>-->
             </div>
 
-            <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+            <div class=" max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
                 <div class="space-y-6 lg:col-start-1 lg:col-span-2">
                     <!-- Description list-->
                     <section aria-labelledby="applicant-information-title">
@@ -168,7 +162,4 @@
                 <TimeLine/>
             </div>
         </main>
-    </div>
-
-</div>
 

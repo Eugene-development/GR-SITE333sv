@@ -13,9 +13,8 @@
 </svelte:head>
 
 
-<div class="min-h-full">
     <BreadCrumbs crumb="{page}"/>
-    <main class="-mt-24 pb-8">
+    <main class="-mt-12 pb-8">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <h1 class="sr-only">Profile</h1>
             <!-- Main 3 column grid -->
@@ -310,4 +309,3 @@
             </div>
         </div>
     </main>
-</div>

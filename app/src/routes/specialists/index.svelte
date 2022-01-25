@@ -18,13 +18,12 @@
 </svelte:head>
 
 
-<div class="bg-white ">
 
     <BreadCrumbs crumb="{page}"/>
 
     {#each specialists as {id, speciality, description, workers, text}, i}
-        <div class="-mt-24 pb-8">
-            <div class="bg-gray-50 shadow-xl my-12 rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
+        <div class="-mt-12 pb-8">
+            <div class="bg-gray-50 shadow-xl  rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div>
                         <h2 class="text-3xl font-extrabold text-gray-900">
@@ -54,4 +53,3 @@
     {:else}
         <p>Нет данных!</p>
     {/each}
-</div>

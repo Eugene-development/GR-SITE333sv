@@ -17,9 +17,9 @@
 
 <BreadCrumbs crumb="{page}"/>
 
-<div class="-mt-24 pb-8">
+<div class="-mt-12 pb-8">
     <div class="relative">
-        <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
+        <div class=" mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
             {#each gallery as {id, style, street, square, text, testimonial, img, avatar, name}}
             <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
                 <div class="flex-shrink-0">
