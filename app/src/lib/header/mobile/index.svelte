@@ -1,14 +1,20 @@
 <script>
     import {useHeader} from "../../../use/content/header";
-    import {bool} from '../../../stores.js';
+    import {bool, mobileMenu} from '../../../stores.js';
 
     const {menu} = useHeader;
     import {useVisible} from "../../../use/visible";
 
     const {visible} = useVisible;
-    const changeVisibleFormMeasurement = () => bool.update(visible)
+
+    const changeVisibleFormMeasurement = () => bool.update(visible);
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
+
+
+    const changeVisibleMobileMenu = () => mobileMenu.update(visible);
+    let visibleMobileMenu;
+    mobileMenu.subscribe(value => visibleMobileMenu = value);
 
 </script>
 <!--
@@ -21,7 +27,8 @@
     From: "opacity-100 scale-100"
     To: "opacity-0 scale-95"
 -->
-{#if false}
+{#if visibleMobileMenu}
+
     <div class="absolute z-20 top-0 inset-x-0 p-2 transition transform origin-top lg:hidden bg-gray-50">
         <div class="rounded-lg shadow-md  ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div class="px-5 pt-4 flex items-center justify-between">
@@ -30,7 +37,7 @@
                          alt="">
                 </div>
                 <div class="-mr-2">
-                    <button type="button"
+                    <button on:click={changeVisibleMobileMenu} type="button"
                             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
                         <span class="sr-only">Close menu</span>
                         <!-- Heroicon name: outline/x -->
@@ -44,7 +51,7 @@
             <div class="pt-5 pb-2">
                 <div class="px-2 space-y-1">
                     {#each menu as { value, link }, i}
-                        <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50" href="/{link}">{value}</a>
+                        <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50" href="/{link}" on:click={changeVisibleMobileMenu}>{value}</a>
                     {:else}
                         <p>Нет данных!</p>
                     {/each}

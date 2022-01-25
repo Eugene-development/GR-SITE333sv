@@ -48,11 +48,11 @@
 	<meta name="description" content="{description}">
 </svelte:head>
 
-<div>
-	{visibleFormPhone}
-	{phone}
+<!--<div>-->
+<!--	{visibleFormPhone}-->
+<!--	{phone}-->
 
-</div>
+<!--</div>-->
 <section>
 	<main>
 

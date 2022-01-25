@@ -1,5 +1,5 @@
 <script>
-    import {bool} from '../../stores.js';
+    import {bool, mobileMenu} from '../../stores.js';
     import {useHeader} from "../../use/content/header";
     // import { useTest } from "../../hooks";
     import {useVisible} from "../../use/visible";
@@ -10,6 +10,10 @@
     let visibleFormMeasurement;
     bool.subscribe(value => visibleFormMeasurement = value);
 
+
+    const changeVisibleMobileMenu = () => mobileMenu.update(visible);
+    let visibleMobileMenu;
+    mobileMenu.subscribe(value => visibleMobileMenu = value);
 
     const {menu, phone} = useHeader;
 
@@ -44,7 +48,7 @@
                                  src="/Logo/logo1.svg" alt="">
                         </a>
                         <div class="-mr-2 flex items-center md:hidden">
-                            <button type="button"
+                            <button on:click={changeVisibleMobileMenu} type="button"
                                     class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
                                     aria-expanded="false">
                                 <span class="sr-only">Open main menu</span>
