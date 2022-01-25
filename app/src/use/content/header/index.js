@@ -11,10 +11,10 @@ const menu = [
         value: 'Галерея',
         link: 'gallery'
     },
-    {
-        value: 'Отзывы',
-        link: 'testimonials'
-    },
+    // {
+    //     value: 'Отзывы',
+    //     link: 'testimonials'
+    // },
     {
         value: 'Специалисты',
         link: 'specialists'

@@ -57,7 +57,7 @@
                             </button>
                         </div>
                     </div>
-                    <nav class="hidden space-x-8 md:flex md:mx-4 ">
+                    <nav class="hidden space-x-8 md:flex md:mx-6 ">
                         {#each menu as { value, link }, i}
                             <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
                         {:else}
