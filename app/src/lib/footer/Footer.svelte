@@ -1,7 +1,37 @@
 <script>
+    import axios from "axios";
+    import {formEmail} from "../../stores";
+    import {useVisible} from "../../use/visible";
+
+    const {invert} = useVisible;
+    const changeVisibleFormEmail = () => formEmail.update(invert)
+    let visibleFormEmail;
+    formEmail.subscribe(value => visibleFormEmail = value);
+
+    let email = '';
+    const url = `/sendEmail`;
+
+    const apiCRUD = {
+        baseURL: 'https://adminexpo.com:7721/',
+        headers: {
+            Authorization: `Bearer 3`
+        }
+    }
+
+    async function sendPhone() {
+        try {
+            const data = {email: email};
+            await axios.post(url, data, apiCRUD);
+            changeVisibleFormEmail();
+        } catch (error) {
+            console.error(error);
+        }
+    }
 
     const now = new Date();
     const year = now.getFullYear()
+
+
 </script>
 
 <div class=" px-12 py-20 bg-gray-50" id="anchor6">
@@ -177,24 +207,28 @@
                 <p class="mt-4 text-base ">
                     Отправьте вашу почту и получите актуальную информацию о нашей компании, выполняемых работах и ценах
                 </p>
-                <form
-                        class="mt-4 sm:flex sm:max-w-md">
-                    <label for="emailAddress" class="sr-only">Email address</label>
-                    <input v-if="visibleFormEmail"
-                           :value="ruleEmail.email"
-
-                           type="email" id="emailAddress" required class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base  placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400" placeholder="Ваша почта">
-                    <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                        <button v-if="visibleFormEmail" type="submit" class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                            Отправить
-                        </button>
-                    </div>
+                {#if visibleFormEmail}
+                    <form on:submit|preventDefault={sendPhone} class="mt-4 sm:flex sm:max-w-md">
+                        <label for="emailAddress" class="sr-only">Email address</label>
+                        <input bind:value={email}
+                               type="email" id="emailAddress" required
+                               class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base  placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
+                               placeholder="Ваша почта">
+                        <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                            <button type="submit"
+                                    class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                {:else }
                     <div class="mt-3 rounded-md sm:mt-0 sm:flex-shrink-0">
-              <span v-if="!visibleFormEmail" class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                Ожидайте письмо на почту
-              </span>
+                      <span class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                        Ожидайте письмо на почту
+                      </span>
                     </div>
-                </form>
+                {/if}
+
             </div>
         </div>
         <div class="mt-8 border-t border-gray-50 pt-8 md:flex md:items-center md:justify-between">
