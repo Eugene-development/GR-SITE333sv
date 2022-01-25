@@ -476,7 +476,7 @@
 					<div class="mt-8">
 						<div class="inline-flex rounded-md shadow">
 							<button on:click={changeVisibleFormMeasurement}
-									class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-50 bg-gradient-to-r from-green-600 to-cyan-700">
+									class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-50 bg-gradient-to-r from-cyan-700 to-cyan-900">
 								Получить консультацию
 								<!-- Heroicon name: solid/external-link -->
 								<svg class="-mr-1 ml-3 h-5 w-5 text-gray-50" xmlns="http://www.w3.org/2000/svg"
