@@ -217,13 +217,13 @@
                                placeholder="Ваша почта">
                         <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
                             <button type="submit"
-                                    class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                                    class="w-full bg-gradient-to-r from-cyan-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
                                 Отправить
                             </button>
                         </div>
                     {:else }
                         <div class="mt-2 rounded-md sm:mt-0 sm:flex-shrink-0">
-                          <span class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                          <span class="w-full bg-gradient-to-r from-cyan-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
                             Ожидайте письмо на почту
                           </span>
                         </div>
