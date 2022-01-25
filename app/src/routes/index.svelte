@@ -69,7 +69,7 @@
 					<div
 							class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
 						<div class="lg:py-24">
-							<a href="/" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
+							<a href="/contacts" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
 								<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Мы работаем</span>
 								<span class="ml-4 text-sm">Посетите наш офис</span>
 								<!-- Heroicon name: solid/chevron-right -->
@@ -188,7 +188,7 @@
 		<!--    </div>-->
 
 		<!-- Feature section with screenshot -->
-		<div class="bg-gray-50 pt-12 sm:pt-16 lg:pt-24" id="anchor1">
+		<div class="bg-gray-50 pt-12 sm:pt-16 lg:pt-24">
 			<div class="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl ">
 				<div>
 					<h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Идея</h2>
@@ -208,7 +208,7 @@
 		</div>
 
 		<!-- Feature section with grid -->
-		<div class="relative bg-white py-16 sm:py-16 lg:py-24" id="anchor2">
+		<div class="relative bg-white py-16 sm:py-16 lg:py-24">
 			<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
 				<h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Решение</h2>
 				<p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
@@ -454,13 +454,13 @@
 
 
 		<!-- CTA Section -->
-		<div class="relative bg-gray-900" id="anchor4">
+		<div class="relative bg-gray-900">
 			<div class="relative h-56  sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
 				<img class="w-full h-full object-cover"
 					 src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&sat=-100"
 					 alt="">
 				<div aria-hidden="true"
-					 class="absolute inset-0 bg-gradient-to-r from-cyan-100 to-green-200 mix-blend-multiply"></div>
+					 class="absolute inset-0 bg-gradient-to-r from-cyan-100 to-cyan-700 mix-blend-multiply"></div>
 			</div>
 			<div class="relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
 				<div class="md:ml-auto md:w-1/2 md:pl-10">
