@@ -7,13 +7,13 @@
 	import axios from "axios";
 
 	import {useVisible} from "../use/visible";
-	import {formMeasurement, sendForm} from '../stores.js';
+	import {formMeasurement, formPhone} from '../stores.js';
 
 	const {invert} = useVisible;
 
-	const changeVisibleFormPhone = () => sendForm.update(invert)
+	const changeVisibleFormPhone = () => formPhone.update(invert)
 	let visibleFormPhone;
-	sendForm.subscribe(value => visibleFormPhone = value);
+	formPhone.subscribe(value => visibleFormPhone = value);
 
 	const changeVisibleFormMeasurement = () => formMeasurement.update(invert)
 	let visibleFormMeasurement;
@@ -113,10 +113,7 @@
 												Отправить
 											</button>
 										</div>
-										{/if}
-
-
-										{#if visibleFormPhone}
+											{:else}
 										<div class="mt-3 sm:mt-0 ">
 											<span class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-500 to-cyan-600 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 											  Спасибо за доверие
