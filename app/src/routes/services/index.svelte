@@ -5,9 +5,9 @@
 
     const {prices, services} = useServices
 
-    const {visible} = useVisible;
+    const {invert} = useVisible;
 
-    const changeVisibleFormMeasurement = () => formMeasurement.update(visible)
+    const changeVisibleFormMeasurement = () => formMeasurement.update(invert)
     let visibleFormMeasurement;
     formMeasurement.subscribe(value => visibleFormMeasurement = value);
 

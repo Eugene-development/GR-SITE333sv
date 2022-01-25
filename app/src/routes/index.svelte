@@ -7,13 +7,17 @@
 	import axios from "axios";
 
 	import {useVisible} from "../use/visible";
-	import {sendForm} from '../stores.js';
+	import {formMeasurement, sendForm} from '../stores.js';
 
 	const {invert} = useVisible;
+
 	const changeVisibleFormPhone = () => sendForm.update(invert)
 	let visibleFormPhone;
 	sendForm.subscribe(value => visibleFormPhone = value);
 
+	const changeVisibleFormMeasurement = () => formMeasurement.update(invert)
+	let visibleFormMeasurement;
+	formMeasurement.subscribe(value => visibleFormMeasurement = value);
 
 	let phone = '';
 	const url = `/sendPhone`;
