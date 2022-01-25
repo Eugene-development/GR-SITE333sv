@@ -1,14 +1,15 @@
 <script>
-    import {bool, mobileMenu} from '../../stores.js';
+    import {formMeasurement, mobileMenu} from '../../stores.js';
     import {useHeader} from "../../use/content/header";
     // import { useTest } from "../../hooks";
     import {useVisible} from "../../use/visible";
     import MobileMenu from "./mobile/index.svelte"
 
-    const {visible} = useVisible;
-    const changeVisibleFormMeasurement = () => bool.update(visible)
+    const {visible} = useVisible;//Хук
+
+    const changeVisibleFormMeasurement = () => formMeasurement.update(visible)//Сеттер
     let visibleFormMeasurement;
-    bool.subscribe(value => visibleFormMeasurement = value);
+    formMeasurement.subscribe(value => visibleFormMeasurement = value);//Геттер
 
 
     const changeVisibleMobileMenu = () => mobileMenu.update(visible);
