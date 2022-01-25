@@ -207,9 +207,10 @@
                 <p class="mt-4 text-base ">
                     Отправьте вашу почту и получите актуальную информацию о нашей компании, выполняемых работах и ценах
                 </p>
-                {#if visibleFormEmail}
-                    <form on:submit|preventDefault={sendPhone} class="mt-4 sm:flex sm:max-w-md">
+
+                <form class="mt-4 sm:flex sm:max-w-md" on:submit|preventDefault={sendPhone}>
                         <label for="emailAddress" class="sr-only">Email address</label>
+                    {#if visibleFormEmail}
                         <input bind:value={email}
                                type="email" id="emailAddress" required
                                class="appearance-none min-w-0 w-full bg-white border border-transparent rounded-md py-2 px-4 text-base  placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white focus:border-white focus:placeholder-gray-400"
@@ -220,14 +221,15 @@
                                 Отправить
                             </button>
                         </div>
-                    </form>
-                {:else }
-                    <div class="mt-3 rounded-md sm:mt-0 sm:flex-shrink-0">
-                      <span class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
-                        Ожидайте письмо на почту
-                      </span>
-                    </div>
-                {/if}
+                    {:else }
+                        <div class="mt-2 rounded-md sm:mt-0 sm:flex-shrink-0">
+                          <span class="w-full bg-gradient-to-r from-teal-700 to-cyan-900 border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 ">
+                            Ожидайте письмо на почту
+                          </span>
+                        </div>
+                    {/if}
+
+                </form>
 
             </div>
         </div>
