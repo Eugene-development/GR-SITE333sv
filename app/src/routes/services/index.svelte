@@ -1,13 +1,15 @@
 <script>
     import {useServices} from "../../use/content/services";
+    import {formMeasurement} from '../../stores.js';
+    import {useVisible} from "../../use/visible";
+
     const {prices, services} = useServices
 
-    import { bool } from '../../stores.js';
-    import { useVisible } from "../../use/visible";
-    const { visible } = useVisible;
-    const changeVisibleFormMeasurement = () => bool.update(visible)
+    const {visible} = useVisible;
+
+    const changeVisibleFormMeasurement = () => formMeasurement.update(visible)
     let visibleFormMeasurement;
-    bool.subscribe(value => visibleFormMeasurement = value);
+    formMeasurement.subscribe(value => visibleFormMeasurement = value);
 
     const page = 'Услуги';
     const title = 'Наши услуги по ремонту'
