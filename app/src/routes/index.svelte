@@ -9,8 +9,8 @@
 	import {useVisible} from "../use/visible";
 	import {sendForm} from '../stores.js';
 
-	const {visible} = useVisible;
-	const changeVisibleFormPhone = () => sendForm.update(visible)
+	const {invert} = useVisible;
+	const changeVisibleFormPhone = () => sendForm.update(invert)
 	let visibleFormPhone;
 	sendForm.subscribe(value => visibleFormPhone = value);
 

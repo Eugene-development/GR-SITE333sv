@@ -1,18 +1,17 @@
 <script>
     import {formMeasurement, mobileMenu} from '../../stores.js';
     import {useHeader} from "../../use/content/header";
-    // import { useTest } from "../../hooks";
     import {useVisible} from "../../use/visible";
     import MobileMenu from "./mobile/index.svelte"
 
-    const {visible} = useVisible;//Хук
+    const {invert} = useVisible;//Хук
 
-    const changeVisibleFormMeasurement = () => formMeasurement.update(visible)//Сеттер
+    const changeVisibleFormMeasurement = () => formMeasurement.update(invert)//Сеттер
     let visibleFormMeasurement;
     formMeasurement.subscribe(value => visibleFormMeasurement = value);//Геттер
 
 
-    const changeVisibleMobileMenu = () => mobileMenu.update(visible);
+    const changeVisibleMobileMenu = () => mobileMenu.update(invert);
     let visibleMobileMenu;
     mobileMenu.subscribe(value => visibleMobileMenu = value);
 

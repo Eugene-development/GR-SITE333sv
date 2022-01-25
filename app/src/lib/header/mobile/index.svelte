@@ -1,18 +1,18 @@
 <script>
     import {useHeader} from "../../../use/content/header";
-    import {bool, mobileMenu} from '../../../stores.js';
+    import {formMeasurement, mobileMenu} from '../../../stores.js';
 
     const {menu} = useHeader;
     import {useVisible} from "../../../use/visible";
 
-    const {visible} = useVisible;
+    const {invert} = useVisible;
 
-    const changeVisibleFormMeasurement = () => bool.update(visible);
+    const changeVisibleFormMeasurement = () => formMeasurement.update(invert);
     let visibleFormMeasurement;
-    bool.subscribe(value => visibleFormMeasurement = value);
+    formMeasurement.subscribe(value => visibleFormMeasurement = value);
 
 
-    const changeVisibleMobileMenu = () => mobileMenu.update(visible);
+    const changeVisibleMobileMenu = () => mobileMenu.update(invert);
     let visibleMobileMenu;
     mobileMenu.subscribe(value => visibleMobileMenu = value);
 

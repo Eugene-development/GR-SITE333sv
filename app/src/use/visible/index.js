@@ -1,5 +1,5 @@
-const visible = param => !param
+const invert = param => !param
 
 export const useVisible = {
-    visible
+    invert
 }
