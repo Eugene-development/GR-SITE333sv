@@ -77,7 +77,7 @@ const specialists = [
                 age: '40 лет'
             },
         ],
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut dolor eius est hic illum iste iusto libero modi natus nobis numquam, officia perspiciatis porro praesentium quae quam quas quasi quia quibusdam quisquam quod recusandae sed sequi sit sunt suscipit unde vel voluptas voluptatum! Alias, ea eaque ex in inventore ipsa libero necessitatibus nesciunt non placeat rerum sapiente suscipit voluptatem. Aut consequuntur earum id laudantium libero magni maxime natus odio quam quasi quidem repellat, reprehenderit repudiandae rerum sapiente suscipit vel vero voluptas? A aperiam assumenda at beatae dignissimos eveniet in iste, iusto officiis qui recusandae repellendus saepe sequi, sint voluptatibus?\n'
+        text: 'Подготовка стен Убрать старые обои или краску со стен, штукатурка по маякам, штукатурка под провило, штукатурка в 1 слой Шпатлевание стен Грунтование стен Все эти же процедуры с потолками. Покраска стен,покраска потолков,а также оклейка стен обоями и потолков'
     },
     {
         id: 4,
@@ -97,7 +97,7 @@ const specialists = [
                 age: '28 лет'
             },
         ],
-        text: 'Монтирует потолочные конструкции различного уровня сложности, учитывая особенности помещения. Устанавливает осветительные приборы. Пользует электроинструменты и композитный баллон, соблюдая технику безопасности.'
+        text: 'Монтирует потолочные конструкции различного уровня сложности, учитывая особенности помещения. Устанавливает осветительные приборы. Использует электроинструменты и композитный баллон, соблюдая технику безопасности.'
     },
     {
         id: 5,

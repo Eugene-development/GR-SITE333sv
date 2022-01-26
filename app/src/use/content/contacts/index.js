@@ -8,7 +8,7 @@ const contacts = [
             work: '8 (831) 423-23-89',
             mobile: '8 920-022-50-85 '
         },
-        manager: 'Светлана'
+        manager: 'Юлия'
     },
     {
         id: 2,
