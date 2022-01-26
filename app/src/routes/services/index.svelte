@@ -142,7 +142,7 @@
                             </div>
                             <div class="mt-6">
                                 <div class="rounded-md shadow">
-                                    <span on:click={changeVisibleFormMeasurement} class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-cyan-800 hover:bg-gray-900">
+                                    <span on:click={changeVisibleFormMeasurement} class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-cyan-700 to-cyan-900 hover:bg-gray-900">
                                         Получить консультацию
                                     </span>
                                 </div>
