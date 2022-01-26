@@ -3,7 +3,7 @@
 </script>
 
 
-<div class="pb-24 bg-gradient-to-r from-sky-700 to-cyan-500">
+<div class="pb-16 bg-gradient-to-r from-sky-700 to-cyan-500">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="relative flex flex-wrap items-center justify-center lg:justify-between">
             <!-- Logo -->
@@ -18,7 +18,7 @@
 
             <div class="w-full  py-5 lg:border-t lg:border-white lg:border-opacity-20">
                 <!-- Left nav -->
-                <div class="text-3xl text-white"><a href="/">Главная</a> / {crumb}</div>
+                <div class="text-2xl text-white"><a href="/">Главная</a> / {crumb}</div>
                 <div class="px-12 lg:px-0">
                     <!-- Search -->
                     <!--                <div class="max-w-xs mx-auto w-full lg:max-w-md">-->

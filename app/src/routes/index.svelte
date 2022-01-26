@@ -91,7 +91,7 @@
 								Дарим каждому клиенту дизайн проект!
 							</p>
 							<div class="mt-10 sm:mt-12">
-								<div  class="sm:max-w-xl sm:mx-auto lg:mx-0">
+								<form on:submit|preventDefault={sendPhone} class="sm:max-w-xl sm:mx-auto lg:mx-0">
 									<div class="sm:flex">
 
 
@@ -99,13 +99,11 @@
 
 										<div class="min-w-0 flex-1">
 											<label for="phone" class="sr-only">Phone</label>
-											<input bind:value={phone} id="phone" type="tel" placeholder="Запишите ваш телефон"
+											<input bind:value={phone} required id="phone" type="tel" placeholder="Запишите ваш телефон"
 													class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 										</div>
 										<div class="mt-3 sm:mt-0 sm:ml-3">
-											<button
-													on:click={sendPhone}
-													type="submit"
+											<button type="submit"
 													class="block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-green-600 to-cyan-700 text-white font-medium hover:from-green-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 												Отправить
 											</button>
@@ -121,7 +119,7 @@
 									</div>
 									<p class="mt-3 text-sm text-gray-300 sm:mt-4">В течении дня с вами свяжется специалист и даст подробную консультацию.
 										<br>Услуга бесплатная.</p>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>

@@ -18,9 +18,10 @@
         }
     }
 
+
     async function sendPhone() {
         try {
-            const data = {email: email};
+            const data = {email};
             await axios.post(url, data, apiCRUD);
             changeVisibleFormEmail();
         } catch (error) {
