@@ -56,8 +56,6 @@
 <!--</div>-->
 <section>
 	<main>
-
-
 		<div class="relative bg-gray-900 overflow-hidden ">
 			<div class="max-w-screen-xl mx-auto">
 				<div class="relative z-5 pb-2 bg-gray-900 sm:pb-10 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-5 xl:pb-5">
@@ -66,7 +64,6 @@
 							fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
 						<polygon points="50,0 100,0 50,100 0,100"/>
 					</svg>
-
 					<div
 							class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
 						<div class="lg:py-24">
@@ -93,7 +90,6 @@
 							<div class="mt-10 sm:mt-12">
 								<form on:submit|preventDefault={sendPhone} class="sm:max-w-xl sm:mx-auto lg:mx-0">
 									<div class="sm:flex">
-
 
 										{#if !visibleFormPhone}
 

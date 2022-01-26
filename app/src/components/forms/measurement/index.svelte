@@ -121,6 +121,7 @@
                                             <div class="sm:col-span-2">
                                                 <input
                                                         bind:value={name}
+                                                        required
                                                         type="text"
                                                         name="project-name"
                                                         id="name"
@@ -138,6 +139,7 @@
                                             <div class="sm:col-span-2">
                                                 <input
                                                         bind:value={address}
+                                                        placeholder="Необязательно"
                                                         type="text"
                                                         name="project-name"
                                                         id="address"
@@ -155,8 +157,9 @@
                                             <div class="sm:col-span-2">
                                                 <input
                                                         bind:value={phone}
+                                                        required
                                                         type="text"
-                                                        name="project-name"
+                                                        name="project-phone"
                                                         id="client-phone"
                                                         class="block w-full h-8 p-2 shadow-sm sm:text-sm focus:ring-green-500 focus:border-green-500 border border-gray-300 rounded-md">
                                             </div>
@@ -166,7 +169,7 @@
                                             <div>
                                                 <label for="time"
                                                        class="block text-sm font-medium text-gray-900 sm:mt-px sm:pt-2">
-                                                    Удобное время
+                                                    Удобное время звонка
                                                 </label>
                                             </div>
                                             <div class="sm:col-span-2">
