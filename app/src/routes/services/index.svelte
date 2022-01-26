@@ -129,7 +129,7 @@
                             </p>
                             <div class="mt-4 flex items-center justify-center text-5xl font-extrabold text-gray-900">
                               <span>
-                                ₽{price}
+                                {price} ₽
                               </span>
                                 <span class="ml-3 text-xl font-medium text-gray-500">
                                 кв/м
@@ -216,7 +216,7 @@
     <div class="bg-gray-50">
         <div class="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
             <h2 class="text-3xl font-extrabold text-gray-900">
-                Подробное описание услуг
+                Краткое описание услуг
             </h2>
 
             {#each services as {name, description}}
