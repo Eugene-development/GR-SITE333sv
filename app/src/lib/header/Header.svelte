@@ -44,12 +44,16 @@
                     </div>
                     <nav class="hidden space-x-8 md:flex md:mx-6 ">
                         {#each menu as { value, link }, i}
-                            <a class="text-sm font-medium text-white hover:text-gray-300 p-2"
+                            <a class="text-sm font-medium hover:text-gray-300 p-2 text-gray-50"
                                href="/{link}">{value}
-<!--                            <a class="text-sm font-medium text-white hover:text-gray-300 p-2"-->
-<!--                               class:text-xl="{current === {link}}" on:click="{() => current = {link}}"-->
-<!--                               href="/{link}">{value}-->
                             </a>
+<!--                            <a class="text-sm font-medium hover:text-gray-300 p-2 {'/'+link === window.location.pathname ? 'text-red-500' : 'text-cyan-600'}"-->
+<!--                               href="/{link}">{value}-->
+<!--                            </a>-->
+<!--                            <a class="text-sm font-medium text-white hover:text-gray-300 p-2"-->
+<!--                               class:text-xl="{current === '/'+link}" on:click="{() => current = window.location.pathname}"-->
+<!--                               href="/{link}">{value}-->
+<!--                            </a>-->
                         {:else}
                             <p>Нет данных!</p>
                         {/each}

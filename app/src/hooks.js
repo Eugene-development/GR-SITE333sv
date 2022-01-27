@@ -1,6 +1,5 @@
 import cookie from 'cookie';
 import {v4 as uuid} from '@lukeed/uuid';
-import {bool} from "./stores";
 
 export const handle = async ({request, resolve}) => {
     const cookies = cookie.parse(request.headers.cookie || '');
