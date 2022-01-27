@@ -13,6 +13,7 @@
     mobileMenu.subscribe(value => visibleMobileMenu = value);
 
     const {menu, phone} = useHeader;
+    let current;
 
 </script>
 
@@ -43,7 +44,12 @@
                     </div>
                     <nav class="hidden space-x-8 md:flex md:mx-6 ">
                         {#each menu as { value, link }, i}
-                            <a class="text-sm font-medium text-white hover:text-gray-300" href="/{link}">{value}</a>
+                            <a class="text-sm font-medium text-white hover:text-gray-300 p-2"
+                               href="/{link}">{value}
+<!--                            <a class="text-sm font-medium text-white hover:text-gray-300 p-2"-->
+<!--                               class:text-xl="{current === {link}}" on:click="{() => current = {link}}"-->
+<!--                               href="/{link}">{value}-->
+                            </a>
                         {:else}
                             <p>Нет данных!</p>
                         {/each}

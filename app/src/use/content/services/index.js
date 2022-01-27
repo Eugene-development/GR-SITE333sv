@@ -8,7 +8,7 @@ const prices = [
         works: [
             {
                 id: 1,
-                name: 'Демонтаж'
+                name: 'Частичный демонтаж'
             },
             {
                 id: 2,
