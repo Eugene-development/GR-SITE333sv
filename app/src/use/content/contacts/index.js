@@ -6,7 +6,7 @@ const contacts = [
         email: 'gr-nn@inbox.ru',
         phones: {
             work: '8 (831) 423-23-89',
-            mobile: '8 920-022-50-85 '
+            mobile: '8 (831) 423-27-22  '
         },
         manager: 'Юлия'
     },
