@@ -22,8 +22,8 @@
     <BreadCrumbs crumb="{page}"/>
 
     {#each specialists as {id, speciality, description, workers, text}, i}
-        <div class="-mt-12 pb-8">
-            <div class="bg-gray-50 shadow-xl  rounded-lg max-w-7xl mx-auto  px-4 sm:px-6 lg:py-20 lg:px-8">
+        <div class="-mt-12 pb-8 ">
+            <div class="bg-gray-50 shadow-xl  rounded-lg max-w-7xl mx-auto  p-8 sm:px-6 lg:py-20 lg:px-8">
                 <div class="lg:grid lg:grid-cols-3 lg:gap-8">
                     <div>
                         <h2 class="text-3xl font-extrabold text-gray-900">
@@ -32,7 +32,7 @@
                         <p class="mt-4 text-lg text-gray-500">{description}</p>
                     </div>
                     <div class="mt-12 lg:mt-0 lg:col-span-2">
-                        <dl class="space-y-12">
+                        <dl class="space-y-8">
                             <div>
                                 <dt class="text-lg leading-6 font-medium text-gray-900">
                                     {#each workers as {id, name, age}, i}
