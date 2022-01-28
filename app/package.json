@@ -5,7 +5,7 @@
     "dev": "svelte-kit dev --host 192.168.0.101",
     "build": "rm -rf build && svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview --host --port 4160",
+    "preview": "svelte-kit preview --host --port 9999",
     "start": "PORT=9999 node build/index.js"
   },
   "devDependencies": {
