@@ -82,7 +82,7 @@ const specialists = [
     {
         id: 4,
         speciality: 'Монтажник',
-        description: 'Мантаж натяжных потолков',
+        description: 'Монтаж натяжных потолков',
         workers: [
             {
                 name: 'Алексей А.',

@@ -214,7 +214,7 @@
 
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-gray-50">
-        <div class="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
+        <div class="max-w-7xl mx-auto p-4 divide-y divide-gray-200 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold text-gray-900">
                 Краткое описание услуг
             </h2>
