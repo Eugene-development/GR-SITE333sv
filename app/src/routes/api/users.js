@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const get = () => {
+export const get = async () => {
 
    const users =  [
         {
@@ -237,13 +237,19 @@ export const get = () => {
 
 
 
+    const url = `https://jsonplaceholder.typicode.com/users`;
+    const res = await fetch(url);
+    const post = await res.json();
+    // return {props: {post}}
+
+
 
 
 
 
     return {
         body: {
-            users
+            post
         }
     }
 }
