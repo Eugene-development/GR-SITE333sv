@@ -237,11 +237,21 @@ export const get = async () => {
 
 
 
-    const url = `https://jsonplaceholder.typicode.com/users`;
-    const res = await fetch(url);
-    const post = await res.json();
+    // const url = `https://jsonplaceholder.typicode.com/users`;
+    // const res = await fetch(url);
+    // const post = await res.json();
     // return {props: {post}}
 
+
+    const url = `http://localhost:7751/get-all-category/`;
+    const headers = {
+        Authorization: `Bearer 2`
+    }
+
+    const res = await fetch(url, {
+        headers,
+    });
+    const post = await res.json();
 
 
 
