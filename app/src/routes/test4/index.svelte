@@ -1,10 +1,9 @@
 <script context="module">
     export const load = async ({fetch}) => {
         const res = await fetch("/api/users")
-        console.log(res)
-
-        const data = await res.json()
-        console.log(data)
+        // const res = await fetch("/api/users")
+        const dataX = await res.json()
+        const data = dataX.post.data
         return {
             props: {
                 data
@@ -18,4 +17,7 @@
 </script>
 
 
-<pre>{JSON.stringify(data)}</pre>
+<!--{JSON.stringify(data)}-->
+{#each data as {name}}
+    <p>{name}</p>
+    {/each}
