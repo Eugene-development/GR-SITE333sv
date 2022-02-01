@@ -153,7 +153,7 @@
 		</div>
 
 		<!-- Feature section with grid -->
-		<div class="relative bg-white py-16 sm:py-16 lg:py-24">
+		<div class="relative bg-white py-16 sm:py-24 lg:py-24">
 			<div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
 				<h2 class="text-base font-semibold tracking-wider text-cyan-600 uppercase">Решение</h2>
 				<p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
@@ -308,8 +308,8 @@
 		<!-- Testimonial section -->
 		<div class="pb-16 bg-gradient-to-tr from-green-400 via-green-800 to-green-600 lg:pb-0 lg:z-5 lg:relative">
 			<div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-				<div class="relative lg:-my-8">
-					<div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>
+				<div class="relative -my-8">
+<!--					<div aria-hidden="true" class="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"></div>-->
 					<div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
 						<div class="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
 							<img class="object-cover lg:h-full lg:w-full"
