@@ -29,9 +29,10 @@
                                  src="/Logo/logo1.svg" alt="">
                         </a>
                         <div class="-mr-2 flex items-center md:hidden">
+
                             <button on:click={changeVisibleMobileMenu} type="button"
-                                    class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
-                                    aria-expanded="false">
+                                    class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+                                    aria-expanded="false"><span class="mx-2">Меню</span>
                                 <span class="sr-only">Open main menu</span>
                                 <!-- Heroicon name: outline/menu -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
