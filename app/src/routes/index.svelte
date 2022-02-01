@@ -95,7 +95,7 @@
 
 										<div class="min-w-0 flex-1">
 											<label for="phone" class="sr-only">Phone</label>
-											<input bind:value={phone} required id="phone" type="tel" placeholder="Запишите ваш телефон"
+											<input bind:value={phone} required id="phone" type="tel" placeholder="Укажите телефон для консультации"
 													class="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900">
 										</div>
 										<div class="mt-3 sm:mt-0 sm:ml-3">
