@@ -1,9 +1,10 @@
-export const get = async () => {
+export const get = async ({ params }) => {
 
+    const {id} = params;
+    console.log(id)
+    // const id = 1;
 
-
-
-    const url = `https://jsonplaceholder.typicode.com/posts/1`;
+    const url = `https://jsonplaceholder.typicode.com/posts/${id}`;
     const res = await fetch(url);
     const post = await res.json();
 

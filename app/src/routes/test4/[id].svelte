@@ -3,10 +3,10 @@
         const id = params.id;
 
 
-        console.log(id)
+        // console.log(id)
 
 
-        const res = await fetch("/api/user")
+        const res = await fetch(`/api/2`)
         const dataXk = await res.json();
 
         const data = dataXk.post
