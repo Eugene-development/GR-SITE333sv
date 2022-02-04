@@ -6,10 +6,10 @@
         // console.log(id)
 
 
-        const res = await fetch(`/api/2`)
+        const res = await fetch(`/api/${id}`)
         const dataXk = await res.json();
 
-        const data = dataXk.post
+        const data = dataXk.post.data[0]
 
 
         return {
@@ -26,7 +26,7 @@
 
 <p>123</p>
 
-{data.title}
+{data.name}
 
 <!--{#each data as {id, name}}-->
 <!--    <p class="px-2 border text-2xl bg-white w-full m-3">{name}</p>-->
