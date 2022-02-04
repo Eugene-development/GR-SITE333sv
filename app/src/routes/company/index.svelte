@@ -1,6 +1,9 @@
 <script context="module">
-    import TimeLine from "../../components/company/TimeLine/index.svelte";
+    import TimeLine_v1 from "../../components/company/TimeLine/index.svelte";
     import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
+
+
+    const TimeLine = TimeLine_v1
 
     // import {browser, dev} from '$app/env';
     //
@@ -16,7 +19,7 @@
     // // it so that it gets served as a static asset in prod
     // export const prerender = true;
 
-    const page = 'О компании';
+    const page = 'О компании'
     const title = 'О компании "Гост Ремонт"'
     const description = 'Информация о компании'
 
@@ -159,7 +162,10 @@
                     </section>
                 </div>
 
-                <TimeLine/>
+
+
+                <svelte:component this={TimeLine}/>
+<!--                <TimeLine/>-->
             </div>
         </main>
 
