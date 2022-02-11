@@ -1,6 +1,6 @@
 <script>
-    import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
-    import {useTestimonials} from "../../use/content/testimonials"
+    import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
+    import {useTestimonials} from "$lib/use/content/testimonials"
 
     const {testimonials_2022} = useTestimonials
 

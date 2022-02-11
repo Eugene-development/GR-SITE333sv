@@ -1,9 +1,9 @@
 <script>
     import {formMeasurement, mobileMenu} from '../../stores.js';
-    import {useHeader} from "../../use/content/header";
-    import {useVisible} from "../../use/visible";
+    import {useHeader} from "$lib/use/content/header";
+    import {useVisible} from "$lib/use/visible";
     import MobileMenu from "./mobile/index.svelte"
-    import FormMeasurement from "../../components/forms/measurement/index.svelte"
+    import FormMeasurement from "$lib/components/forms/measurement/index.svelte"
 
     const {invert} = useVisible;
     const changeVisibleFormMeasurement = () => formMeasurement.update(invert)

@@ -1,6 +1,6 @@
 <script>
-    import { useSpecialists } from "../../use/content/specialists";
-    import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
+    import { useSpecialists } from "$lib/use/content/specialists";
+    import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
 
     const {specialists} = useSpecialists;
 

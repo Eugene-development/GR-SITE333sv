@@ -1,6 +1,6 @@
 <script>
-    import {formMeasurement} from "../../../stores";
-    import {useVisible} from "../../../use/visible";
+    import {formMeasurement} from "../../../../stores";
+    import {useVisible} from "$lib/use/visible";
     import axios from "axios";
     import measurement from "./index.svelte";
     const {invert} = useVisible;//Хук

@@ -1,6 +1,6 @@
 <script context="module">
     import TimeLine_v1 from "$lib/components/company/TimeLine/index.svelte";
-    import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
+    import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
 
 
     const TimeLine = TimeLine_v1

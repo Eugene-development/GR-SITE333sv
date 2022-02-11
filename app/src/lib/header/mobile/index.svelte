@@ -1,9 +1,9 @@
 <script>
-    import {useHeader} from "../../../use/content/header";
+    import {useHeader} from "$lib/use/content/header";
     import {formMeasurement, mobileMenu} from '../../../stores.js';
 
     const {menu} = useHeader;
-    import {useVisible} from "../../../use/visible";
+    import {useVisible} from "$lib/use/visible";
 
     const {invert} = useVisible;
 

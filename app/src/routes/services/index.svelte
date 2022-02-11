@@ -1,7 +1,7 @@
 <script>
-    import {useServices} from "../../use/content/services";
+    import {useServices} from "$lib/use/content/services";
     import {formMeasurement} from '../../stores.js';
-    import {useVisible} from "../../use/visible";
+    import {useVisible} from "$lib/use/visible";
 
     const {prices, services} = useServices
 

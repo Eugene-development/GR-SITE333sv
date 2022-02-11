@@ -1,7 +1,7 @@
 <script>
     import axios from "axios";
     import {formEmail} from "../../stores";
-    import {useVisible} from "../../use/visible";
+    import {useVisible} from "$lib/use/visible";
 
     const {invert} = useVisible;
     const changeVisibleFormEmail = () => formEmail.update(invert)

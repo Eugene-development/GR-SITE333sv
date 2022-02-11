@@ -1,5 +1,5 @@
 <script>
-    import {useTimeLine} from "../../../../use/content/company";
+    import {useTimeLine} from "$lib/use/content/company";
 
     const {timeLine} = useTimeLine
 </script>

@@ -1,6 +1,6 @@
 <script>
-    import {useContacts} from "../../use/content/contacts";
-    import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
+    import {useContacts} from "$lib/use/content/contacts";
+    import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
 
 
     const {contacts} = useContacts;

@@ -1,6 +1,6 @@
 <script>
-    import {useGallery} from "../../use/content/gallery";
-    import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
+    import {useGallery} from "$lib/use/content/gallery";
+    import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
 
 
     const {gallery} = useGallery
