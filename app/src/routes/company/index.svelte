@@ -1,5 +1,5 @@
 <script context="module">
-    import TimeLine_v1 from "../../components/company/TimeLine/index.svelte";
+    import TimeLine_v1 from "$lib/components/company/TimeLine/index.svelte";
     import BreadCrumbs from "../../components/breadcrumbs/index.svelte"
 
 
