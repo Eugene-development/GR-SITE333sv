@@ -92,13 +92,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Отзывы за всё время
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Мы храним отзывы о нашей компании за весь период работы с 2018 года.
                                     </p>
@@ -120,13 +120,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Честность
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Показываем все отзывы как есть. Не стесняемся и негативных, потому что они позволяют нам стать лучше!
                                     </p>
@@ -148,13 +148,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Лояльность
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Мы стараемся, что бы наши клиенты рекомендовали нас своим знакомым и близким людям.
                                     </p>
@@ -176,13 +176,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Открытость
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Стараемся делать нашу работу максимально открытой и прозрачной для всех.
                                     </p>
@@ -204,13 +204,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Обратная связь
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Ваши отзывы это всегда отличная возможность услышать ваше мнение о нас.
                                     </p>
@@ -234,13 +234,13 @@
                                   </span>
                                 </div>
                                 <div class="mt-8">
-                                    <h3 class="text-lg font-medium">
-                                        <a href="#" class="focus:outline-none">
+                                    <div class="text-lg font-medium">
+                                        <div class="focus:outline-none">
                                             <!-- Extend touch target to entire panel -->
                                             <span class="absolute inset-0" aria-hidden="true"></span>
                                             Экспертность
-                                        </a>
-                                    </h3>
+                                        </div>
+                                    </div>
                                     <p class="mt-2 text-sm text-gray-500">
                                         Указывая нам о минусах и плюсах вы помогаете нашим специалистам понять как работать ещё лучше.
                                     </p>
