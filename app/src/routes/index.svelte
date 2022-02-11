@@ -6,7 +6,7 @@
 <script>
 	import axios from "axios";
 
-	import {useVisible} from "../use/visible";
+	import {useVisible} from "$lib/use/visible";
 	import {formMeasurement, formPhone} from '../stores.js';
 
 	const {invert} = useVisible;
