@@ -31,7 +31,7 @@
 
 	async function sendPhone(){
 		try {
-			const data = {phone: phone} ;
+			const data = {phone: phone};
 			await axios.post(url, data, apiCRUD);
 			changeVisibleFormPhone();
 		} catch (error) {
