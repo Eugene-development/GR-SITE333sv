@@ -21,7 +21,6 @@
         currentYear = selected;
         if (currentYear === 2020){
             currentTestimonials = testimonials_2020
-            console.log(currentTestimonials)
         } else if (currentYear === 2021){
             currentTestimonials = testimonials_2021
         } else if (currentYear === 2022){
