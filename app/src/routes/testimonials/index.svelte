@@ -10,9 +10,7 @@
         testimonials_2018,
     } = useTestimonials
 
-    const page = 'Отзывы';
-    const title = 'Отзывы о нашей компании'
-    const description = 'Знакомство с отзывами'
+    const allCountTestimonials = testimonials_2022.length + testimonials_2021.length + testimonials_2020.length + testimonials_2019.length + testimonials_2018.length
 
     let years = [
         { id: 1, year: 2022 },
@@ -41,6 +39,11 @@
                 break;
         }
     }
+
+    const page = 'Отзывы';
+    const title = 'Отзывы о компании "Гост Ремонт"'
+    const description = 'Знакомство с отзывами'
+
 
 </script>
 
@@ -89,7 +92,7 @@
                                 </div>
 
                                 <div class="px-6 py-5 text-sm font-medium text-center">
-                                    <span class="text-gray-900">44</span>
+                                    <span class="text-gray-900">{allCountTestimonials}</span>
                                     <span class="text-gray-600">за всё время</span>
                                 </div>
 
