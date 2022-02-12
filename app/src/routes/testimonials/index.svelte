@@ -14,9 +14,12 @@
         { id: 3, year: 2020 }
     ];
     let selected;
-    let answer = '';
+    let currentYear = '';
 
-    console.log(answer)
+    const setYear = () => {
+        currentYear = selected
+        console.log(currentYear)
+    }
 
 </script>
 
@@ -262,7 +265,7 @@
                         <div class="rounded-lg bg-white overflow-hidden shadow">
                             <div class="p-6">
                                 <h2 class="text-2xl font-medium text-gray-900" id="announcements-title">Отзывы за
-                                    <select bind:value={selected} on:change="{() => console.log(selected)}">
+                                    <select bind:value={selected} on:change="{setYear}">
                                         {#each years as {year}}
                                             <option value={year}>
                                                 {year}
