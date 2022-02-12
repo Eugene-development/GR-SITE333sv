@@ -27,16 +27,18 @@
 
     const setYear = () => {
         currentYear = selected;
-        if (currentYear === 2022){
-            currentTestimonials = testimonials_2022
-        } else if (currentYear === 2021){
-            currentTestimonials = testimonials_2021
-        } else if (currentYear === 2020){
-            currentTestimonials = testimonials_2020
-        } else if (currentYear === 2019){
-            currentTestimonials = testimonials_2019
-        } else if (currentYear === 2018){
-            currentTestimonials = testimonials_2018
+
+        switch (currentYear) {
+            case 2022: currentTestimonials = testimonials_2022
+                break;
+            case 2021: currentTestimonials = testimonials_2021
+                break;
+            case 2020: currentTestimonials = testimonials_2020
+                break;
+            case 2019: currentTestimonials = testimonials_2019
+                break;
+            case 2018: currentTestimonials = testimonials_2018
+                break;
         }
     }
 
