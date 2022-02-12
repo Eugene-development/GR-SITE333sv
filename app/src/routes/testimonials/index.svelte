@@ -2,7 +2,7 @@
     import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
     import {useTestimonials} from "$lib/use/content/testimonials"
 
-    const {testimonials_2022} = useTestimonials
+    const {testimonials_2022, testimonials_2021, testimonials_2020} = useTestimonials
 
     const page = 'Отзывы';
     const title = 'Отзывы о нашей компании'
@@ -15,10 +15,18 @@
     ];
     let selected;
     let currentYear = '';
+    let currentTestimonials = testimonials_2022;
 
     const setYear = () => {
-        currentYear = selected
-        console.log(currentYear)
+        currentYear = selected;
+        if (currentYear === 2020){
+            currentTestimonials = testimonials_2020
+            console.log(currentTestimonials)
+        } else if (currentYear === 2021){
+            currentTestimonials = testimonials_2021
+        } else if (currentYear === 2022){
+            currentTestimonials = testimonials_2022
+        }
     }
 
 </script>
@@ -275,8 +283,7 @@
                                     год:</h2>
                                 <div class="flow-root mt-6">
                                     <div role="list" class="-my-5 divide-y divide-gray-200">
-                                        {#each testimonials_2022 as {name, stars, text}}
-
+                                        {#each currentTestimonials as {name, stars, text}}
                                             <div class="py-5">
                                             <div class="relative focus-within:ring-2 focus-within:ring-cyan-500">
                                                 <div class="flex text-sm font-semibold text-gray-800">
