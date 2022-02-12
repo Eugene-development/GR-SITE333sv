@@ -82,10 +82,10 @@
                                     <!--                    </div>-->
                                 </div>
                             </div>
-                            <div class="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-3 sm:divide-y-0 sm:divide-x">
+                            <div class="border-t border-gray-200 bg-gray-50 grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
                                 <div class="px-6 py-5 text-sm font-medium text-center">
-                                    <span class="text-gray-900">12</span>
-                                    <span class="text-gray-600">отзывов в этом году</span>
+                                    <span class="text-gray-900">{testimonials_2022.length}</span>
+                                    <span class="text-gray-600">в этом году</span>
                                 </div>
 
                                 <div class="px-6 py-5 text-sm font-medium text-center">
@@ -93,10 +93,10 @@
                                     <span class="text-gray-600">за всё время</span>
                                 </div>
 
-                                <div class="px-6 py-5 text-sm font-medium text-center">
-                                    <span class="text-gray-900">41</span>
-                                    <span class="text-gray-600">положительных отзывов</span>
-                                </div>
+<!--                                <div class="px-6 py-5 text-sm font-medium text-center">-->
+<!--                                    <span class="text-gray-900">41</span>-->
+<!--                                    <span class="text-gray-600">положительных отзывов</span>-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </section>
@@ -286,7 +286,7 @@
                         <div class="rounded-lg bg-white overflow-hidden shadow">
                             <div class="p-6">
                                 <h2 class="text-2xl font-medium text-gray-900" id="announcements-title">Отзывы за
-                                    <select bind:value={selected} on:change="{setYear}">
+                                    <select class="mx-1" bind:value={selected} on:change="{setYear}">
                                         {#each years as {year}}
                                             <option value={year}>
                                                 {year}
