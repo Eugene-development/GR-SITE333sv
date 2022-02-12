@@ -2,7 +2,13 @@
     import BreadCrumbs from "$lib/components/breadcrumbs/index.svelte"
     import {useTestimonials} from "$lib/use/content/testimonials"
 
-    const {testimonials_2022, testimonials_2021, testimonials_2020} = useTestimonials
+    const {
+        testimonials_2022,
+        testimonials_2021,
+        testimonials_2020,
+        testimonials_2019,
+        testimonials_2018,
+    } = useTestimonials
 
     const page = 'Отзывы';
     const title = 'Отзывы о нашей компании'
@@ -11,7 +17,9 @@
     let years = [
         { id: 1, year: 2022 },
         { id: 2, year: 2021 },
-        { id: 3, year: 2020 }
+        { id: 3, year: 2020 },
+        { id: 3, year: 2019 },
+        { id: 3, year: 2018 }
     ];
     let selected;
     let currentYear = '';
@@ -19,12 +27,16 @@
 
     const setYear = () => {
         currentYear = selected;
-        if (currentYear === 2020){
-            currentTestimonials = testimonials_2020
+        if (currentYear === 2022){
+            currentTestimonials = testimonials_2022
         } else if (currentYear === 2021){
             currentTestimonials = testimonials_2021
-        } else if (currentYear === 2022){
-            currentTestimonials = testimonials_2022
+        } else if (currentYear === 2020){
+            currentTestimonials = testimonials_2020
+        } else if (currentYear === 2019){
+            currentTestimonials = testimonials_2019
+        } else if (currentYear === 2018){
+            currentTestimonials = testimonials_2018
         }
     }
 
