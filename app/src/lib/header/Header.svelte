@@ -61,7 +61,7 @@
                     </nav>
 
                 </div>
-                <div class="hidden md:flex md:items-center md:space-x-6">
+                <div class="hidden lg:flex md:items-center md:space-x-6">
                     <p class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
                         {phone}
                     </p>
