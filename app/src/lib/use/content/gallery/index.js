@@ -18,7 +18,7 @@ const gallery = [
         text: 'Проект обновления квартиры в кирпичной пятиэтажки застройки конца 70-х годов. Материалы подобранные к проекту создали лёгкое и светлое настроение от пребывания в этой квартире. Все пожелания заказчика были учтены и реализованы в полной мере, есть даже рабочая зона.',
         testimonial: 'Всё устроило более чем. По срокам всё соблюдено на отлично!',
         img: 'sovr.jpg',
-        avatar: 'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        avatar: 'https://gost-remont.s3.eu-central-1.amazonaws.com/clients/islands-300.png',
         name: 'Светлана'
     },
     {
