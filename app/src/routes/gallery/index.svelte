@@ -6,8 +6,8 @@
     const {gallery} = useGallery
 
     const page = 'Галерея';
-    const title = 'Галерея наших работ'
-    const description = 'Знакомство с нашими работами'
+    const title = 'Галерея наших работ по ремонту картир в Нижнем Новгороде | Компания Гост-ремонт'
+    const description = 'Знакомство с работами по ремонту квартир, выполненными нашими специалистами'
 </script>
 
 <svelte:head>

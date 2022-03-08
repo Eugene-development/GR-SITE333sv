@@ -12,8 +12,8 @@
     formMeasurement.subscribe(value => visibleFormMeasurement = value);
 
     const page = 'Услуги';
-    const title = 'Наши услуги по ремонту'
-    const description = 'Услуги и цены на них'
+    const title = 'Наши услуги по ремонту квартир в Нижнем Новгороде | Компания Гост-Ремонт'
+    const description = 'Спектр услуг на стандартный, косметический ремонт или "под ключ"'
 </script>
 
 <svelte:head>

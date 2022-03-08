@@ -21,7 +21,7 @@
 
     const page = 'О компании'
     const title = 'О компании "Гост Ремонт"'
-    const description = 'Информация о компании'
+    const description = 'Общая информация о компании Гост-Ремонт, выполняющая работы по ремонту квартир в Нижнем Новгороде'
 
    export const isWorld = false
 

@@ -6,8 +6,8 @@
     const {contacts} = useContacts;
 
     const page = 'Контакты';
-    const title = 'Наши контакты'
-    const description = 'Связь с нами'
+    const title = 'Наши контакты в Нижнем новгороде | Компания Гост-Ремонт'
+    const description = 'Связь с нами и контакты в Нижнем Новгороде и области'
 </script>
 
 <svelte:head>
