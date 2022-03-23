@@ -1,5 +1,28 @@
 <script context="module">
-	 //export const prerender = true;
+
+	const l = console.log
+	export const load = async ({ url }) => {
+
+		const idCompany = url.searchParams.get('company');
+
+		l(idCompany)
+
+		let mainText;
+		switch (idCompany) {
+			case '71599198': mainText = 'Ремонт квартир в Нижнем Новгороде'
+				break;
+			case '72346322': mainText = 'Ремонт квартир под ключ'
+				break;
+			default: mainText = 'Ремонт квартир'
+				break;
+		}
+
+		return {
+			props: {
+				mainText,
+			}
+		}
+	}
 </script>
 
 
@@ -42,6 +65,8 @@
 	const page = 'Главная';
 	const title = 'Ремонт квартир в Нижнем Новгороде | Компания Гост-Ремонт'
 	const description = 'Проведение полного или частичного ремонта квартир в Нижнем Новгороде и области'
+
+	export let mainText
 </script>
 
 <svelte:head>
@@ -78,11 +103,9 @@
 										  clip-rule="evenodd"/>
 								</svg>
 							</a>
-							<h1
-									class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
-								<span class="block">Ремонт квартир</span>
-								<span
-										class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-cyan-400 sm:pb-5">любой сложности</span>
+							<h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-5xl lg:mt-6 xl:text-5xl">
+								<span class="block">{mainText}</span>
+								<span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-cyan-400 sm:pb-5">любой сложности</span>
 							</h1>
 							<p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
 								Дарим каждому клиенту дизайн проект!
