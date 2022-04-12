@@ -4,14 +4,13 @@
 	export const load = async ({ url }) => {
 
 		const idCompany = url.searchParams.get('company');
-
-		l(idCompany)
-
 		let mainText;
 		switch (idCompany) {
 			case '71599198': mainText = 'Ремонт квартир в Нижнем Новгороде'
 				break;
 			case '72346322': mainText = 'Ремонт квартир под ключ'
+				break;
+			case '72466146': mainText = 'Закажите ремонт квартир'
 				break;
 			default: mainText = 'Ремонт квартир'
 				break;
@@ -19,7 +18,7 @@
 
 		return {
 			props: {
-				mainText,
+				mainText
 			}
 		}
 	}
@@ -46,7 +45,7 @@
 	const url = `/sendPhone`;
 
 	const apiCRUD =  {
-		baseURL: 'https://adminexpo.com:7721/',
+		baseURL: 'https://larux.ru:7721/',
 		headers: {
 			Authorization: `Bearer 3`
 		}
