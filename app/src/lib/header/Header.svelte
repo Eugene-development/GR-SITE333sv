@@ -1,5 +1,5 @@
 <script>
-    
+
     import {formMeasurement, mobileMenu} from '../../stores.js';
     import {useHeader} from "$lib/use/content/header";
     import {useVisible} from "$lib/use/visible";
@@ -63,9 +63,9 @@
 
                 </div>
                 <div class="hidden lg:flex md:items-center md:space-x-6">
-                    <p class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
+                    <a href="tel:+78314232389" class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
                         {phone}
-                    </p>
+                    </a>
                     <button on:click={changeVisibleFormMeasurement} type="button"
                             class="inline-flex items-center px-4 py-1 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-600 to-cyan-700">
                         Получить консультацию
