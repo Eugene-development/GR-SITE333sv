@@ -63,7 +63,7 @@
 
                 </div>
                 <div class="hidden lg:flex md:items-center md:space-x-6">
-                    <a href="tel:+78314232389" class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
+                    <a href="tel:+79306711455" class="text-base font-medium text-white hover:text-gray-300 lg:text-xl">
                         {phone}
                     </a>
                     <button on:click={changeVisibleFormMeasurement} type="button"

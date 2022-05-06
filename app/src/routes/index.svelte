@@ -82,18 +82,16 @@
 	<main>
 		<div class="relative bg-gray-900 overflow-hidden ">
 			<div class="max-w-screen-xl mx-auto">
-				<div class="relative z-5 pb-2 bg-gray-900 sm:pb-10 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-5 xl:pb-5">
-					<svg
-							class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-900 transform translate-x-1/2"
-							fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<polygon points="50,0 100,0 50,100 0,100"/>
+				<div class="relative z-20 pb-2 bg-gray-900 sm:pb-10 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-5 xl:pb-5">
+					<svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-900 transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+						<polygon points="50,0 100,0 50,100 0,100" />
 					</svg>
 					<div
 							class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
 						<div class="lg:py-24">
 							<a href="/contacts" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
 								<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Мы работаем</span>
-								<span class="ml-4 text-sm">Посетите наш офис</span>
+								<span class="ml-4 text-sm">Ремонт по ГОСТам</span>
 								<!-- Heroicon name: solid/chevron-right -->
 								<svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 									 fill="currentColor" aria-hidden="true">
