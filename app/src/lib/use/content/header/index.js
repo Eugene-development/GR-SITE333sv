@@ -1,12 +1,16 @@
 const menu = [
+    // {
+    //     value: 'Главная',
+    //     link: ''
+    // },
     {
         value: 'Услуги',
         link: 'services'
     },
-    {
-        value: 'Компания',
-        link: 'company'
-    },
+    // {
+    //     value: 'Компания',
+    //     link: 'company'
+    // },
     {
         value: 'Галерея',
         link: 'gallery'

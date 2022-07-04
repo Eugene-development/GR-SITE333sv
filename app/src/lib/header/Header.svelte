@@ -44,7 +44,7 @@
                             </button>
                         </div>
                     </div>
-                    <nav class="hidden space-x-8 md:flex md:mx-6 ">
+                    <nav class="hidden space-x-4 md:flex md:mx-6 ">
                         {#each menu as { value, link }, i}
                             <a class="text-sm font-medium hover:text-gray-300 p-2 text-gray-50"
                                href="/{link}">{value}
