@@ -33,7 +33,7 @@ const menu = [
     },
 ]
 
-const phone = '+7 (930) 671-14-55'
+const phone = 'Может просто оплатите долг за работу???'
 
 export const useHeader = {
     menu,

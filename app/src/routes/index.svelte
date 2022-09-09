@@ -1,3 +1,5 @@
+
+
 <script context="module">
 
 	const l = console.log
@@ -6,7 +8,7 @@
 		const idCompany = url.searchParams.get('company');
 		let mainText;
 		switch (idCompany) {
-			case '71599198': mainText = 'Ремонт квартир в Нижнем Новгороде'
+			case '71599198': mainText = 'Может просто оплатите долг за работу???'
 				break;
 			case '72346322': mainText = 'Ремонт квартир под ключ'
 				break;
@@ -43,14 +45,12 @@
 
 	let phone = '';
 	const url = `/sendPhone`;
-
 	const apiCRUD =  {
 		baseURL: 'https://larux.ru:7721/',
 		headers: {
 			Authorization: `Bearer 3`
 		}
 	}
-
 	async function sendPhone(){
 		try {
 			const data = {phone: phone};
@@ -90,8 +90,10 @@
 							class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
 						<div class="lg:py-24">
 							<a href="/contacts" class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
-								<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Мы работаем</span>
-								<span class="ml-4 text-sm">Ремонт по ГОСТам</span>
+								<span class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-green-500 to-cyan-600 rounded-full">Может просто оплатите долг за работу???</span>
+								<!-- <span class="ml-4 text-sm">Ремонт по ГОСТам</span> -->
+																<span class="ml-4 text-sm">Может просто оплатите долг за работу???</span>
+
 								<!-- Heroicon name: solid/chevron-right -->
 								<svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
 									 fill="currentColor" aria-hidden="true">
@@ -102,11 +104,15 @@
 							</a>
 							<h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-5xl lg:mt-6 xl:text-5xl">
 								<span class="block">{mainText}</span>
-								<span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-cyan-400 sm:pb-5">любой сложности</span>
+								<span class="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-green-200 to-cyan-400 sm:pb-5">'Может просто оплатите долг за работу???</span>
 							</h1>
 							<p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-								Дарим каждому клиенту дизайн проект!
+								Может просто оплатите долг за работу???
 							</p>
+							<p class="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
+								Может просто оплатите долг за работу???
+							</p>
+
 							<div class="mt-10 sm:mt-12">
 								<form on:submit|preventDefault={sendPhone} class="sm:max-w-xl sm:mx-auto lg:mx-0">
 									<div class="sm:flex">
